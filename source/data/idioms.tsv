@@ -1,0 +1,70 @@
+# chengyu	pinyin (one syllable per char)	literal gloss (4 parts, " / ")	meaning	origin / note	tag	LLM tie-in (optional)
+# line order = order in which idiom cards are introduced
+马马虎虎	mǎ mǎ hū hū	horse / horse / tiger / tiger	so-so; careless, sloppy	A folk story tells of a painter whose half-tiger, half-horse picture confused his sons; the phrase became a byword for carelessness. In daily speech it just means "so-so".	everyday
+好久不见	hǎo jiǔ bú jiàn	very / long / not / see	long time no see	A set phrase rather than a classical idiom. English "long time no see" is often said to be a word-for-word copy of it.	everyday
+一路平安	yí lù píng ān	one / road / peaceful / safe	have a safe trip	Said when seeing someone off.	wish
+一路顺风	yí lù shùn fēng	one / road / following / wind	bon voyage; may your trip go smoothly	A tailwind the whole way. Some people jokingly avoid it for flights, because planes take off into the wind.	wish
+万事如意	wàn shì rú yì	ten thousand / things / as / wish	may everything go as you wish	A favorite New Year and birthday greeting.	wish
+心想事成	xīn xiǎng shì chéng	heart / think / thing / succeed	may your wishes come true	Greeting-card classic: what the heart thinks of, comes true.	wish
+恭喜发财	gōng xǐ fā cái	respectfully / congratulate / make / fortune	wishing you prosperity	The Chinese New Year greeting. Kids like to reply 红包拿来: "hand over the red envelope!"	wish
+人山人海	rén shān rén hǎi	people / mountain / people / sea	huge crowds	Mountains and seas of people: think of any big station during a holiday.	everyday
+一模一样	yì mú yí yàng	one / mold / one / shape	exactly alike	As if cast from the same mold. Here 模 is read mú, not mó.	everyday
+乱七八糟	luàn qī bā zāo	messy / seven / eight / rotten	a complete mess	The numbers seven and eight often mean "all over the place" in idioms.	everyday
+七上八下	qī shàng bā xià	seven / up / eight / down	on tenterhooks; anxious	From the saying about fifteen buckets in a well: seven going up, eight going down. Your heart can't settle.	everyday
+五颜六色	wǔ yán liù sè	five / color / six / color	colorful, multicolored	Five colors, six colors: more colors than you can count.	everyday
+自言自语	zì yán zì yǔ	self / speak / self / talk	to talk to oneself	Self speaks, self talks.	everyday
+东张西望	dōng zhāng xī wàng	east / look / west / gaze	to glance around	Looking east, gazing west: eyes everywhere.	everyday
+半信半疑	bàn xìn bàn yí	half / believe / half / doubt	half-convinced, skeptical	Half believing, half doubting.	everyday
+大同小异	dà tóng xiǎo yì	big / same / small / different	largely the same, with minor differences	The big things are the same, the small things differ.	everyday
+一见钟情	yí jiàn zhōng qíng	one / sight / focus / love	love at first sight	One look, and all feelings are focused on one person.	everyday
+不可思议	bù kě sī yì	not / can / think / discuss	unimaginable, incredible	Originally a Buddhist term for truths beyond thought and words.	everyday
+莫名其妙	mò míng qí miào	none / can name / its / mystery	baffling; for no apparent reason	Nobody can name its secret.	everyday
+一举两得	yì jǔ liǎng dé	one / act / two / gains	to kill two birds with one stone	One action, two gains.	everyday
+一石二鸟	yì shí èr niǎo	one / stone / two / birds	to kill two birds with one stone	A modern loan from the European saying; 一举两得 is the native equivalent.	everyday
+入乡随俗	rù xiāng suí sú	enter / village / follow / custom	when in Rome, do as the Romans do	When you enter a village, follow its customs.	everyday
+一目了然	yí mù liǎo rán	one / glance / clear / so	clear at a glance	One look and everything is clear.	everyday
+千方百计	qiān fāng bǎi jì	thousand / ways / hundred / plans	by every possible means	A thousand methods, a hundred plans.	everyday
+车水马龙	chē shuǐ mǎ lóng	carts / water / horses / dragon	heavy, bustling traffic	Carts flowing like water, horses like a long dragon.	everyday
+马到成功	mǎ dào chéng gōng	horse / arrive / achieve / success	instant success; good luck!	The moment the war horse arrives, the battle is won. A common wish before exams.	wish
+九牛一毛	jiǔ niú yì máo	nine / oxen / one / hair	a drop in the ocean	The historian Sima Qian wrote that his death would matter as little as one hair from nine oxen.	story
+一帆风顺	yì fān fēng shùn	one / sail / wind / favorable	smooth sailing	A sail with a favorable wind all the way. Also a wish.	wish
+熟能生巧	shú néng shēng qiǎo	familiar / can / produce / skill	practice makes perfect	An old oil seller could pour oil through the hole of a coin without wetting it. "Nothing special," he said, "just practice."	learning	That's training: enough gradient steps and the skill emerges.
+温故知新	wēn gù zhī xīn	review / old / know / new	review the old to learn the new	From Confucius' Analects: whoever reviews the old and gains new insight can be a teacher.	learning	Spaced repetition in four characters: what FSRS schedules for you every day.
+循序渐进	xún xù jiàn jìn	follow / order / gradually / advance	to progress step by step	Follow the proper order and advance gradually.	learning	Curriculum learning: train on easy examples first, harder ones later.
+笨鸟先飞	bèn niǎo xiān fēi	clumsy / bird / first / fly	the slow need to start early	A clumsy bird takes off first. Often said modestly about oneself.	learning
+滴水穿石	dī shuǐ chuān shí	drip / water / pierce / stone	constant effort wears down any obstacle	Dripping water eventually bores through stone. Like your daily epoch.	learning
+半途而废	bàn tú ér fèi	half / way / and / abandon	to give up halfway	Stopping in the middle of the road.	learning
+举一反三	jǔ yī fǎn sān	raise / one / return / three	learn one thing, infer many	Confucius: if I show a student one corner and he can't work out the other three, I don't repeat the lesson.	learning	Generalization: from a few examples to unseen cases, like few-shot prompting.
+纸上谈兵	zhǐ shàng tán bīng	paper / on / talk / soldiers	armchair strategy; theory without practice	General Zhao Kuo knew every military text by heart, then lost a huge army at the battle of Changping.	story
+一日千里	yí rì qiān lǐ	one / day / thousand / li	rapid progress	Like a legendary horse that runs a thousand li in one day.	learning
+精益求精	jīng yì qiú jīng	refined / more / seek / refinement	to keep improving what is already good	Already fine, still seeking finer.	learning	Fine-tuning a model that is already good.
+事半功倍	shì bàn gōng bèi	work / half / result / double	half the effort, twice the result	The opposite is 事倍功半: twice the work, half the result.	learning	What quantization promises: most of the quality at a fraction of the memory.
+胸有成竹	xiōng yǒu chéng zhú	chest / have / complete / bamboo	to have a well-thought-out plan	The painter Wen Tong pictured the whole bamboo in his mind before his brush touched the paper.	story
+画龙点睛	huà lóng diǎn jīng	paint / dragon / dot / eyes	to add the finishing touch	A painter left his dragons without eyes. When he dotted them in, the dragons came alive and flew away.	story
+一针见血	yì zhēn jiàn xiě	one / needle / see / blood	to hit the nail on the head	One needle and blood shows: straight to the point. Here 血 is read xiě.	everyday
+守株待兔	shǒu zhū dài tù	guard / stump / wait / rabbit	to wait for luck instead of working	A farmer saw a rabbit run into a tree stump and die. He gave up farming to wait by the stump for more rabbits.	story
+画蛇添足	huà shé tiān zú	draw / snake / add / feet	to ruin something by overdoing it	In a race to draw a snake for a jug of wine, the fastest man added feet. "Snakes have no feet," said another, and took the wine.	story
+对牛弹琴	duì niú tán qín	to / cow / play / zither	to talk to the wrong audience	A musician played beautiful music to an ox, which kept chewing grass.	story
+井底之蛙	jǐng dǐ zhī wā	well / bottom / 's / frog	someone with a narrow view of the world	A frog at the bottom of a well thinks the sky is as big as the well's opening.	story
+亡羊补牢	wáng yáng bǔ láo	lose / sheep / mend / pen	better late than never	After a wolf took a sheep, the shepherd finally mended the pen, and lost no more.	story
+自相矛盾	zì xiāng máo dùn	self / mutual / spear / shield	to contradict oneself	A man sold a spear that pierces any shield and a shield no spear can pierce. "And if your spear hits your shield?" That's why 矛盾 means contradiction.	story
+狐假虎威	hú jiǎ hǔ wēi	fox / borrow / tiger / might	to bully others with someone else's power	A fox walked ahead of a tiger. The animals fled from the tiger, and the fox claimed they feared him.	story
+刻舟求剑	kè zhōu qiú jiàn	carve / boat / seek / sword	rigid thinking that ignores change	A man dropped his sword from a moving boat, carved a mark on the side, and later searched the water below the mark.	story
+掩耳盗铃	yǎn ěr dào líng	cover / ears / steal / bell	to fool oneself	A thief covered his own ears while stealing a bell, sure that if he couldn't hear it, nobody could.	story
+拔苗助长	bá miáo zhù zhǎng	pull / seedlings / help / grow	to spoil things through impatience	A farmer pulled his rice seedlings up a little to help them grow faster. The next day they had all withered.	story	A learning rate that's too high: the loss explodes instead of going down.
+塞翁失马	sài wēng shī mǎ	border / old man / lose / horse	a blessing in disguise	An old man lost his horse; it came back with another. His son broke a leg riding it, which kept him out of a deadly war.	story
+杯弓蛇影	bēi gōng shé yǐng	cup / bow / snake / shadow	to be scared of imaginary dangers	A guest saw a snake in his wine and fell ill. It was only the reflection of a bow hanging on the wall.	story
+朝三暮四	zhāo sān mù sì	morning / three / evening / four	fickle; always changing one's mind	A keeper offered his monkeys three nuts in the morning and four at night. They protested, so he offered four and three, and they were delighted.	story
+望梅止渴	wàng méi zhǐ kě	gaze / plums / stop / thirst	to console oneself with illusions	Cao Cao told his thirsty soldiers there was a plum grove ahead. Their mouths watered, and they marched on.	story
+破釜沉舟	pò fǔ chén zhōu	break / pots / sink / boats	to burn one's bridges; all in	General Xiang Yu sank his boats and smashed the cooking pots, so his army could only win or die.	story
+指鹿为马	zhǐ lù wéi mǎ	point / deer / call / horse	to deliberately call black white	The minister Zhao Gao presented a deer to the emperor as a horse, to see which officials dared contradict him.	story
+盲人摸象	máng rén mō xiàng	blind / people / touch / elephant	to judge the whole from one part	Blind men each touched one part of an elephant and argued: it's a wall, a rope, a pillar, a fan…	story	Each attention head sees one pattern; only together do they see the elephant.
+鹦鹉学舌	yīng wǔ xué shé	parrot / parrot / learn / tongue	to repeat others without understanding	A parrot imitating human speech.	ai	The "stochastic parrot" critique of LLMs, two thousand years early.
+以讹传讹	yǐ é chuán é	with / error / pass on / error	errors spread and grow as they are passed on	Each retelling adds to the mistake.	ai	Like models trained on their own hallucinations: errors compound.
+闭门造车	bì mén zào chē	close / door / build / cart	to work in isolation, ignoring reality	Building a cart behind closed doors, never checking it fits the road.	everyday	Training without evaluation on real data.
+南辕北辙	nán yuán běi zhé	south / shafts / north / tracks	actions that work against one's goal	A man heading to the southern state of Chu drove north, boasting of his fast horses and plentiful money.	story
+画饼充饥	huà bǐng chōng jī	draw / cake / satisfy / hunger	to feed oneself on illusions	Drawing a pancake to fill an empty stomach.	everyday
+一鸣惊人	yì míng jīng rén	one / cry / startle / people	to amaze everyone with a sudden success	A king compared himself to a bird that hadn't sung for three years: "When it sings, it will astonish everyone."	story
+四面楚歌	sì miàn chǔ gē	four / sides / Chu / songs	surrounded by enemies, isolated	Besieged Xiang Yu heard songs of his homeland Chu from every side and thought his own people had defected.	story
+叶公好龙	Yè gōng hào lóng	Ye / lord / love / dragon	professed love that vanishes when faced with the real thing	Lord Ye filled his house with dragon carvings. When a real dragon came to visit, he fled in terror.	story
+卧薪尝胆	wò xīn cháng dǎn	lie on / brushwood / taste / gall	to endure hardship to prepare a comeback	After his defeat, King Goujian slept on brushwood and tasted bitter gall every day so he would never forget.	story

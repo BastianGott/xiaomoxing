@@ -1,0 +1,15 @@
+# Local copies of older versions (git history replaces them)
+*_backup_*.html
+
+# Build output: `python source/build.py` regenerates both
+source/data.json
+source/dist/
+
+# Test screenshots and tooling
+source/test/shots/
+node_modules/
+
+# OS files
+Thumbs.db
+desktop.ini
+.DS_Store

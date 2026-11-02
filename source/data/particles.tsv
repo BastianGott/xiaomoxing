@@ -1,0 +1,48 @@
+# Particle game (语气词): one blank '_' (may repeat for doubled phrases), the particle that fits the situation, wrong options, situation, explanation.
+# sentence	answer	wrong (comma-separated)	situation	explanation
+你 是 老师 _ ？	吗	呢,啦	A plain yes/no question: "Are you a teacher?"	吗 turns a statement into a neutral yes/no question.
+你 是 老师 _ ？	吧	吗,呢	You're fairly sure and just checking: "You're a teacher, right?"	吧 = "…right?": you expect a yes.
+我 很 好 ， 你 _ ？	呢	吗,吧	Bouncing the question back: "I'm fine, and you?"	你呢？ = "and you?". 你吗 is not a question.
+我们 走 _ 。	吧	吗,呢	Making a suggestion: "Let's go."	吧 after a statement turns it into a suggestion.
+好 _ ！	啊	吗,呢	Agreeing happily: "Sure!"	好啊！ is a cheerful yes.
+好 _ 。	吧	啊,吗	Agreeing with a small sigh: "Fine… OK."	好吧 = "OK then", a bit reluctant.
+我 的 手机 _ ？	呢	吗,吧	Looking around: "Where's my phone?"	noun + 呢？ = "where is…?"
+他 睡觉 _ 。	呢	吗,吧	Explaining: "He's sleeping (right now)."	呢 at the end of a statement = something is going on.
+你 来 _ ！	嘛	吗,呢	Pleading a little: "Oh come on, come!"	嘛 pushes softly: "come on…"
+我 不 饿 _ 。	嘛	吗,吧	It's obvious to you: "I'm just not hungry!"	嘛 = "obviously / I told you".
+走 _ ！	啦	吗,呢	Cheerful and relaxed: "Off we go!"	啦 = 了 + 啊: lively and casual.
+没有 _ ！	啦	吗,吧	Laughing it off: "Nah, not at all!"	啦 softens a denial so it doesn't sound harsh.
+下雨 _ ！	了	吗,呢	You just noticed: "It's raining (now)!"	了 at the end = a new situation.
+太 好 _ ！	了	吗,呢	Excited: "That's great!"	太 + adjective + 了 is a fixed pattern.
+谁 _ ？	呀	吗,吧	Someone knocks at the door: "Who is it?"	谁 is already a question word, so no 吗. 呀 makes it friendly.
+你 叫 什么 名字 _ ？	呀	吗,吧	Asking a child warmly: "What's your name, sweetie?"	什么 is already a question word, so no 吗. 呀/啊 add warmth.
+你 去 哪儿 _ ？	呢	吗,吧	Gently curious: "So where are you going?"	呢 softens a question-word question. 吗 never goes with 哪儿.
+是 _ ！	啊	吗,呢	Agreeing warmly: "Yeah, true!"	是啊 = "yeah, totally".
+是 _ ？	吗	啦,吧	Mild surprise: "Is that so? Really?"	是吗？ = "really?"
+不 是 _ ！	吧	吗,呢	Disbelief: "No way!"	不是吧！ = "you've got to be kidding".
+你 是 德国 人 ， 对 _ ？	吧	吗,呢	Checking: "You're German, right?"	对吧？ = "right?" at the end of a statement.
+你 真 厉害 _ ！	啊	吗,吧	Impressed: "You're really amazing!"	啊 adds feeling to an exclamation.
+我 吃 _ 。	了	吗,呢	Done already: "I've eaten."	了 after the verb = completed.
+你 吃 了 _ ？	吗	吧,呢	The classic greeting: "Have you eaten?"	吃了吗？ is a greeting, like "how's it going?"
+别 担心 _ 。	啦	吗,呢	Reassuring a friend: "Oh, don't worry!"	啦 makes it light and friendly.
+快 来 _ ！	啊	吗,呢	Urging: "Come on, hurry!"	啊 adds urgency and feeling to a command.
+我们 明天 再 说 _ 。	吧	吗,呢	Postponing: "Let's talk about it tomorrow."	吧 = suggestion.
+他 是 谁 _ ？	啊	吗,吧	Curious: "Who's that?"	谁 is already a question word: no 吗. 啊 makes it sound natural.
+我 也 不 知道 _ 。	啊	吗,吧	A helpless shrug: "I don't know either!"	啊 colors the sentence: here, helpless.
+这 个 好吃 _ ？	吗	呢,啦	Asking: "Is this tasty?"	A yes/no question takes 吗.
+他 又 迟到 _ ！	了	吗,吧	Annoyed: "He's late again!"	又 … 了: it happened (again).
+我们 一起 去 _ ！	吧	吗,呢	Inviting: "Let's go together!"	吧 = let's…
+这样 _ 。	啊	吗,吧	Realizing: "Oh, I see."	这样啊 = "ah, so that's how it is".
+你 说 _ ！	啊	吗,呢	Impatient: "Well, say it!"	你说啊！ = "go on, tell me!"
+你 怎么 不 吃 _ ？	呢	吗,吧	Puzzled: "Why aren't you eating?"	怎么 is a question word: 呢 fits, 吗 doesn't.
+好 _ 好 _ ！	啊	吗,吧	Very eager: "Yes, yes, let's!"	Doubling 好啊 sounds excited.
+没事 _ ？	吧	吗,呢	Worried about someone: "You're OK, right?"	没事吧？ = "are you OK?" (you hope so).
+你 在 干嘛 _ ？	呢	吗,吧	Texting a friend: "What are you up to?"	干嘛 is a question word; 呢 makes it casual.
+我 走 _ ！	啦	吗,呢	Leaving a friend's place cheerfully: "I'm heading out, bye!"	我走啦 is the friendly version of 我走了.
+不 知道 _ 。	啦	吗,吧	Playfully shrugging: "Dunno~"	啦 softens a blunt 不知道.
+还 早 _ ！	呢	吗,吧	Not wanting to leave yet: "It's still early!"	还…呢 = "still…", said in a lively way.
+我 开玩笑 _ 。	呢	吗,吧	Calming someone down: "I'm (just) joking."	呢 marks something going on right now, like 在: 我开玩笑呢 = 我在开玩笑.
+我 在 吃 饭 _ 。	呢	吗,吧	Answering the phone: "I'm eating right now."	在…呢 = in the middle of doing something.
+你 渴 _ 吗 ？	了	呢,吧	After a long walk: "Are you thirsty by now?"	了 = a state that has changed (not thirsty → thirsty).
+你 好 一点儿 _ 吗 ？	了	呢,啊	Visiting a sick friend: "Are you feeling a bit better?"	了 again marks a change: sick → better.
+下雨 _ ！	啦	吗,呢	Excitedly pointing outside: "Look, it's raining!"	下雨啦 = 下雨了 + 啊: the same news, said with feeling.

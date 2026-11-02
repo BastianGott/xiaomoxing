@@ -1,0 +1,73 @@
+# Spoken Chinese for chat fine-tuning: reactions, mood particles, fillers, slang and high-frequency function words.
+# Line order = priority of the 'chat words' stream (a few per epoch, Settings). These words get extra reviews (95% retention).
+# hanzi	pinyin	meaning	kind	level	usage note      kind: react | particle | func | filler | spoken | slang | vulgar
+# '-' in pinyin/meaning/level = the word already exists in words_*.tsv: it keeps its data and only gets the kind + note.
+对	-	-	react	-	Yes / right. Doubled for eager agreement: 对对对！ duì duì duì = "yes yes, exactly!" · 对吧？ = "right?"
+好的	hǎo de	OK; sure (will do)	react	1	Agreeing to do something: "OK, will do". 好的好的 = "sure, sure, got it". Warmer than a plain 好, more willing than 好吧.
+是的	shì de	yes; that's right	react	1	A clear, polite "yes, that's right". 是的是的 = "yes, yes, indeed". Among friends people often just say 对 or 嗯.
+嗯	èn	mm-hm; yeah (also written ǹg)	react	1	The listening sound: "mm-hm, I'm with you". 嗯嗯 is the friendly doubled version, very common in chats. A rising 嗯？ = "hm? what?"
+啊	-	-	particle	-	Adds feeling: 好啊！ "sure!" (happy yes) · 是啊 "yeah, true" · 你说啊 "well, say it!". Without it many replies sound flat and stiff. After some sounds it becomes 呀 or 哪 (天哪).
+吧	-	-	particle	-	Softens a sentence. Suggestion: 我们走吧 "let's go" · guess: 你是学生吧？ "you're a student, right?" · reluctant OK: 好吧 "fine…"
+也	-	-	func	-	"also, too": always right before the verb or adjective, never at the start. 我也是 "me too" · 我也不知道 "I don't know either".
+呢	-	-	particle	-	Bounces a question back: 你呢？ "and you?" · "where is…?": 我的手机呢？ · something going on right now, like 在: 他睡觉呢 "he's sleeping" · 我开玩笑呢 "I'm joking" · lively "still": 还早呢！ "it's still early!"
+吗	-	-	particle	-	Turns a statement into a yes/no question: 你是学生吗？ Never together with question words like 什么, 哪儿, 谁.
+哦	ò	oh (I see)	react	1	"Oh, I see" when something clicks. 哦哦 = "ahh, OK". A rising 哦？ (ó) = "oh? really?"
+真的	zhēn de	really; for real	react	1	真的吗？ "really?" · 真的！ "seriously!" · 真的假的？ "for real??" (lit. "true or fake")
+没事	méi shì	it's nothing; no worries; I'm OK	react	1	Answer to thanks, sorry or "are you OK?": 没事没事 "no worries". 没事吧？ = "are you OK?"
+了	-	-	func	-	After a verb = done: 我吃了 "I ate". At the end = a change of state: 下雨了 "it's raining now" · 我懂了 "got it!" · 我走了 "I'm off". With feelings it means "by now": 你饿了吗？ "are you hungry yet?" · 你好一点儿了吗？ "feeling better?" (你饿吗？ and 你饿不饿？ are natural too, just without the "by now".) Pattern: 太好了！
+在	-	-	func	-	Two jobs. "at, in": 我在家 "I'm at home". Before a verb = "-ing, right now": 我在吃饭 "I'm eating". Casual: 我吃饭呢 or 我在吃饭呢. 正在 = "right in the middle of". 还在下雨 = "it's still raining".
+不	-	-	func	-	"not" for now, the future and habits: 我不吃 "I won't eat / I don't eat that" · 不去了 "not going anymore". 是 → 不是. Never 不有: that's 没有.
+没	-	-	func	-	"didn't, haven't": 我没吃 "I didn't eat" · 还没 "not yet" · 没去过 "never been". 有 → 没有. Contrast: 不吃 = won't, 没吃 = didn't.
+就	-	-	func	-	"just, exactly": 就是这个 "it's exactly this" · 我就在这儿 "I'm right here". "then": 你去我就去 "if you go, I go". Feels sooner than expected (opposite of 才).
+还	-	-	func	-	"still": 他还在睡觉 · "also": 还有… "and also…" · 还行 "it's OK, not bad". (Same character as huán "to return", different word.)
+都	-	-	func	-	"all, both", right before the verb: 我们都去 "we're all going". 都…了 = "already!": 都十点了！ "it's already ten!"
+哈哈	hāhā	haha	react	1	Laughing. In chats 哈哈哈 = lol; the more 哈, the funnier.
+不用	búyòng	no need; don't bother	react	1	Polite refusal of help: 不用，谢谢！ "no need, thanks!" · 不用了 "it's fine, don't".
+没问题	méi wèntí	no problem	react	1	Answer to a request: 能帮我吗？ — 没问题！ "sure, no problem!"
+行	-	-	react	-	"OK, works for me". 行吗？ "is that OK?" · 不行 "no way / that won't work" · 行行行 "fine, fine, fine" (a bit impatient).
+太	-	-	func	-	太…了 = "so…!": 太好了！ "great!" · 太贵了 "way too expensive". Keep the 了 at the end.
+对了	duì le	oh right; by the way	filler	1	Brings up something new: 对了，你明天来吗？ "oh right, are you coming tomorrow?"
+不好意思	bù hǎoyìsi	sorry; excuse me	react	1	Lighter than 对不起: for being late, bumping into someone, asking a stranger. 不好意思，… = "excuse me, …"
+算了	suàn le	forget it; never mind	react	1	"Never mind, let it go". 算了算了 = "oh, forget it". Can sound resigned.
+开玩笑	-	-	spoken	-	"to joke". Just kidding: 开玩笑的！ / 我开玩笑的啦 · in the middle of joking: 我在开玩笑 / 我开玩笑呢 · 别开玩笑了 "stop joking / you're kidding".
+还好	hái hǎo	not bad; OK; luckily	react	1	Modest "I'm OK, not too bad": 你累了吧？ — 还好。 Also "luckily": 还好你来了 "good thing you came".
+一下	-	-	func	-	After a verb it makes a request small and polite: 等一下 "wait a sec" · 看一下 "take a look" · 休息一下 "rest a bit".
+那个	nèige	that one; um… (filler)	filler	1	"that one", and the most common "um…" while thinking: 那个…你有时间吗？ Spoken nèige (or nàge).
+就是	jiùshì	exactly!; I mean…	filler	1	就是！ "exactly!" when agreeing · 就是… "it's just… / I mean…" before explaining.
+然后	-	-	filler	-	"and then…": stories run on 然后…然后… It also fills pauses.
+哇	wā	wow	react	1	Amazed: 哇，好漂亮！ "wow, so pretty!"
+天哪	tiān na	oh my god	react	1	Shock or amazement (lit. "oh heaven"). Fine in any company.
+哎呀	āiyā	oh no!; argh; oops	react	1	Mild dismay: 哎呀，我忘记了！ "oh no, I forgot!" Also when something goes wrong or someone teases you.
+加油	jiāyóu	come on!; you can do it!	react	1	Cheering someone on (lit. "add oil"): before exams, at sports games, for hard work. 加油加油！
+好久不见	hǎojiǔ bú jiàn	long time no see	react	1	Seeing someone again after a while. Answer: 是啊，好久不见！
+拜拜	báibái	bye-bye	react	1	From English "bye-bye": casual. 再见 is more neutral.
+晚安	wǎn'ān	good night	react	1	Said before going to sleep, not as an evening greeting.
+可以	-	-	react	-	可以！ "sure, go ahead" · 可以吗？ "may I? is that OK?" · 还可以 "it's OK, so-so".
+当然	-	-	react	-	当然！ "of course!" · 当然可以 "of course you can".
+嘛	ma	particle: obviously; come on	particle	2	Makes it sound obvious or pleading: 我不饿嘛 "I'm just not hungry!" · 来嘛！ "oh come on, come!" Same sound as 吗, different job.
+啦	la	particle: cheerful (了 + 啊)	particle	2	了 + 啊 in one sound: light and relaxed. 我走啦！ "I'm heading out, bye!" (friendlier than 我走了) · 下雨啦！ "look, it's raining!" · 不知道啦 "dunno~" · 开玩笑的啦 "just kidding!" · 好啦好啦 "OK, OK".
+呀	-	-	particle	-	啊 after a vowel, softer and friendlier: 谁呀？ "who is it?" · 你呀… "oh, you…"
+唉	ài	sigh; ugh	react	2	A sigh: tired, sad or resigned. 唉，又下雨了。 "Ugh, raining again."
+有点儿	yǒudiǎnr	a bit (usually negative)	func	1	For things you don't like: 有点儿累 "a bit tired" · 有点儿贵 "a bit pricey". Not for compliments: say 很好看, not 有点儿好看.
+不错	búcuò	not bad; pretty good	react	1	Understated praise: 不错！ "nice!" · 还不错 "pretty good". Chinese praise is often modest like this.
+一般	-	-	react	-	"so-so, average": 电影怎么样？ — 一般吧。
+开心	kāixīn	happy; having fun	spoken	1	The everyday "happy": 我今天很开心. 高兴 is similar, a bit more formal.
+好玩儿	hǎowánr	fun	spoken	1	"fun" for games, places and people: 太好玩儿了！
+有意思	yǒu yìsi	interesting; fun	spoken	1	"interesting": 很有意思 · 没意思 "boring".
+这样	zhèyàng	like this; so	filler	1	这样啊 "oh, I see" (when you learn something) · 就是这样 "exactly like that".
+厉害	-	-	react	-	"impressive!": 你好厉害！ "you're amazing!" · 太厉害了！
+辛苦	-	-	react	-	辛苦了！ "thanks for your hard work / you must be worn out": said to someone who worked hard, often for you.
+随便	-	-	react	-	"whatever, anything's fine": 吃什么？ — 随便。 Careful: it can sound like you don't care.
+哪里	nǎli	where; (modest) oh, not at all	spoken	2	Old-school modest reply to praise: 哪里哪里 "oh, not at all". Many young people just say 谢谢 or 哈哈.
+嘿	hēi	hey!	react	2	Getting attention: 嘿！你也在这儿？ "hey! you're here too?"
+啥	shá	what (casual)	slang	2	Northern spoken 什么: 啥？ "what?" · 这是啥？ "what's this?"
+干嘛	gànmá	what for?; what are you doing?	spoken	2	Casual for 做什么 or 为什么: 你干嘛呢？ "what are you up to?" · 干嘛不去？ "why not go?"
+反正	fǎnzhèng	anyway; whatever happens	filler	2	"anyway": 去吧，反正你有时间。 "go, you've got time anyway."
+其实	-	-	filler	-	"actually…" to correct or admit something gently: 其实我不喜欢咖啡。
+又	-	-	func	-	"again" for something that already happened: 他又迟到了！ Often a bit annoyed.
+才	-	-	func	-	"not until, only then": 他十点才来 "he didn't show up until ten": later than expected, the opposite feel of 就.
+再	-	-	func	-	"again" for the future: 再说一遍 "say it again" · 再来一杯 "one more cup". 再见 = "see you again".
+已经	-	-	func	-	"already": 我已经吃了。 Usually with 了 at the end.
+我去	wǒ qù	whoa!; damn! (mild slang)	slang	3	Surprise among friends (lit. "I go"): 我去，太贵了吧！ Harmless, but casual.
+牛	niú	cow; (slang) awesome	slang	2	Slang praise: 牛！ / 太牛了！ "awesome!" (lit. "cow"). Very common among friends.
+卧槽	wòcáo	WTF!; holy sh*t! (vulgar)	vulgar	3	Internet spelling of a crude swear word. You'll hear it constantly among young friends and in videos, but it's rude: never with teachers, strangers, older people or at work. Safer: 我去, 天哪.

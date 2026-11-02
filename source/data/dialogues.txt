@@ -1,0 +1,816 @@
+# Chat dialogues ("chat fine-tuning"): short exchanges as everyday spoken Chinese, not textbook prose.
+# A block starts with "== <category>"; turns are "A: tokens | English" and "B: tokens | English" (2-3 turns).
+# Tokens are separated by spaces like in sentences*.txt. Wrong reply options are drawn from OTHER categories.
+# Categories: greet bye thanks sorry request invite agree yesno info news complain comfort praise opinion food plan react
+
+== greet
+A: 你好 ！ | Hello!
+B: 你好 你好 ！ | Hi, hi!
+
+== greet
+A: 好久不见 ！ | Long time no see!
+B: 是 啊 ， 好久不见 ！ | Yeah, long time no see!
+
+== greet
+A: 你 吃 了 吗 ？ | Have you eaten? (a common "how's it going")
+B: 吃 了 ， 你 呢 ？ | Yep, and you?
+
+== greet
+A: 你 怎么样 ？ | How are you doing?
+B: 还 行 ， 你 呢 ？ | Not bad, and you?
+
+== greet
+A: 喂 ？ | Hello? (on the phone)
+B: 喂 ， 是 我 ！ | Hey, it's me!
+
+== greet
+A: 你 好 吗 ？ | How are you?
+B: 挺 好 的 ！ | Pretty good!
+
+== greet
+A: 早 ！ | Morning!
+B: 早 啊 ！ | Morning!
+
+== greet
+A: 嘿 ！ 你 也 在 这儿 ？ | Hey! You're here too?
+B: 对 啊 ！ | Yeah!
+
+== greet
+A: 欢迎 欢迎 ！ | Welcome, welcome!
+B: 谢谢 ！ | Thanks!
+
+== greet
+A: 认识 你 很 高兴 。 | Nice to meet you.
+B: 我 也 是 ！ | Me too!
+
+== greet
+A: 您 好 ， 请 坐 。 | Hello, please have a seat.
+B: 谢谢 。 | Thank you.
+
+== bye
+A: 我 走 了 ！ | I'm off!
+B: 好 ， 拜拜 ！ | OK, bye-bye!
+
+== bye
+A: 拜拜 ！ | Bye-bye!
+B: 拜拜 ， 明天 见 ！ | Bye, see you tomorrow!
+
+== bye
+A: 再见 ！ | Goodbye!
+B: 再见 ， 再见 ！ | Bye, bye!
+
+== bye
+A: 我 去 睡觉 了 。 | I'm off to bed.
+B: 好 ， 晚安 ！ | OK, good night!
+
+== bye
+A: 明天 见 ！ | See you tomorrow!
+B: 明天 见 ！ | See you!
+
+== thanks
+A: 谢谢 你 ！ | Thank you!
+B: 没事 没事 。 | No worries, no worries.
+
+== thanks
+A: 谢谢 ！ | Thanks!
+B: 不客气 ！ | You're welcome!
+
+== thanks
+A: 太 谢谢 你 了 ！ | Thank you so much!
+B: 没事 ， 不客气 。 | It's nothing, you're welcome.
+
+== thanks
+A: 这 是 给 你 的 。 | This is for you.
+B: 哇 ， 谢谢 ！ | Wow, thanks!
+
+== thanks
+A: 生日 快乐 ！ | Happy birthday!
+B: 谢谢 谢谢 ！ | Thanks, thanks!
+
+== sorry
+A: 对不起 ！ | I'm sorry!
+B: 没关系 。 | That's OK.
+
+== sorry
+A: 不好意思 ， 我 来 晚 了 。 | Sorry, I'm late.
+B: 没事 ， 没事 ！ | No problem, no problem!
+
+== sorry
+A: 不好意思 ！ | Sorry! (bumping into someone)
+B: 没事 。 | It's fine.
+
+== sorry
+A: 对不起 ， 我 忘记 了 。 | Sorry, I forgot.
+B: 算了 ， 没事 。 | Never mind, it's fine.
+
+== sorry
+A: 不好意思 ， 我 迟到 了 。 | Sorry I'm late.
+B: 没关系 ， 坐 吧 。 | No problem, have a seat.
+
+== sorry
+A: 你 怎么 现在 才 来 ？ | Why are you only coming now?
+B: 不好意思 ！ | Sorry!
+
+== request
+A: 你 能 帮 我 吗 ？ | Can you help me?
+B: 没问题 ！ | No problem!
+
+== request
+A: 等 一下 ， 好 吗 ？ | Wait a moment, OK?
+B: 好的 ， 好的 。 | Sure, sure.
+
+== request
+A: 我 可以 坐 这儿 吗 ？ | May I sit here?
+B: 可以 啊 ， 请 坐 ！ | Sure, please sit!
+
+== request
+A: 要 帮忙 吗 ？ | Need a hand?
+B: 不用 ， 谢谢 ！ | No need, thanks!
+
+== request
+A: 一 杯 咖啡 ， 谢谢 。 | One coffee, please.
+B: 好的 ， 十 块 。 | Sure, that's ten kuai.
+
+== request
+A: 我 能 看 一下 吗 ？ | Can I have a look?
+B: 可以 啊 ， 你 看 吧 。 | Sure, go ahead.
+
+== request
+A: 明天 早上 八 点 来 。 | Come at eight tomorrow morning.
+B: 好的 好的 。 | OK, OK, will do.
+
+== request
+A: 我 能 用 你 的 电脑 吗 ？ | Can I use your computer?
+B: 不 行 ！ | No way!
+
+== request
+A: 你 看 一下 ！ | Take a look!
+B: 哦 ， 好 。 | Oh, OK.
+
+== invite
+A: 我们 去 吃 饭 吧 ！ | Let's go eat!
+B: 好 啊 ！ | Sure!
+
+== invite
+A: 明天 一起 去 看 电影 吧 ？ | Shall we see a movie together tomorrow?
+B: 好 啊 好 啊 ！ | Yes, yes, let's!
+
+== invite
+A: 我们 走 吧 。 | Let's go.
+B: 等 一下 ！ | Wait a sec!
+
+== invite
+A: 你 也 来 嘛 ！ | Oh come on, you come too!
+B: 好 吧 。 | Fine, OK.
+
+== invite
+A: 一起 去 喝 茶 吧 ？ | Shall we go have tea together?
+B: 不 了 ， 我 有点儿 累 。 | No thanks, I'm a bit tired.
+
+== invite
+A: 明天 去 北京 ， 怎么样 ？ | How about going to Beijing tomorrow?
+B: 好 啊 ！ | Sounds good!
+
+== invite
+A: 再 来 一 杯 吧 ！ | Have another cup!
+B: 不 了 ， 谢谢 。 | No more, thanks.
+
+== invite
+A: 快 走 啦 ！ | Come on, let's go already!
+B: 来 了 来 了 ！ | Coming, coming!
+
+== invite
+A: 起床 啦 ！ | Time to get up!
+B: 再 等 五 分钟 … | Five more minutes…
+
+== invite
+A: 我 也 去 ！ | I'm going too!
+B: 好 啊 ， 一起 走 吧 ！ | Great, let's go together!
+
+== invite
+A: 你 去 吗 ？ | Are you going?
+B: 去 啊 ！ | Sure I am!
+A: 那 我们 一起 走 吧 。 | Then let's go together.
+
+== invite
+A: 今天 天气 真 好 ！ | The weather is really nice today!
+B: 是 啊 ， 我们 去 走 走 吧 ！ | Yeah, let's go for a walk!
+
+== agree
+A: 汉语 很 难 。 | Chinese is hard.
+B: 对 对 对 ！ | Yes yes, exactly!
+
+== agree
+A: 今天 太 热 了 ！ | It's so hot today!
+B: 是 啊 ！ | It sure is!
+
+== agree
+A: 他 汉语 说 得 很 好 。 | He speaks Chinese really well.
+B: 就是 ！ | Exactly!
+
+== agree
+A: 是 这样 吗 ？ | Is it like this?
+B: 对 ， 就是 这样 ！ | Yes, exactly like that!
+
+== agree
+A: 好 冷 啊 ！ | It's so cold!
+B: 是 啊 ， 快 回 家 吧 。 | Yeah, let's hurry home.
+
+== agree
+A: 唉 ， 又 下雨 了 。 | Ugh, raining again.
+B: 是 啊 … | Yeah…
+
+== agree
+A: 我 喜欢 喝 茶 。 | I like tea.
+B: 我 也 是 。 | Me too.
+
+== agree
+A: 我 不 知道 。 | I don't know.
+B: 我 也 不 知道 。 | I don't know either.
+
+== agree
+A: 我 想 喝 咖啡 。 | I want a coffee.
+B: 我 也 一样 。 | Same for me.
+
+== agree
+A: 我 是 学生 ， 你 呢 ？ | I'm a student, and you?
+B: 我 也 是 ！ | Me too!
+
+== yesno
+A: 你 是 学生 吧 ？ | You're a student, right?
+B: 是的 。 | Yes, I am.
+
+== yesno
+A: 你 是 德国 人 吗 ？ | Are you German?
+B: 对 ， 我 是 德国 人 。 | Right, I'm German.
+
+== yesno
+A: 这 是 你 的 手机 吗 ？ | Is this your phone?
+B: 不 是 。 | No, it isn't.
+
+== yesno
+A: 你 会 说 汉语 吗 ？ | Can you speak Chinese?
+B: 会 一点儿 。 | A little.
+
+== yesno
+A: 你 喜欢 喝 茶 吗 ？ | Do you like tea?
+B: 喜欢 ！ | I do!
+
+== yesno
+A: 你 是 中国 人 ， 对 吧 ？ | You're Chinese, right?
+B: 对 ， 我 是 北京 人 。 | Right, I'm from Beijing.
+
+== yesno
+A: 他 是 你 爸爸 吧 ？ | He's your dad, right?
+B: 对 啊 。 | Yep.
+
+== yesno
+A: 您 是 老师 吧 ？ | You're a teacher, right?
+B: 是的 是的 。 | Yes, yes, I am.
+
+== yesno
+A: 你 是 老师 ？ | You're a teacher?
+B: 嗯 。 | Mm-hm.
+
+== yesno
+A: 你 在 听 吗 ？ | Are you listening?
+B: 嗯 嗯 ， 在 听 。 | Mm-hm, I'm listening.
+
+== yesno
+A: 你 懂 了 吗 ？ | Got it?
+B: 懂 了 ， 懂 了 ！ | Got it, got it!
+
+== yesno
+A: 明白 了 吗 ？ | Understood?
+B: 嗯 ， 明白 了 。 | Yeah, understood.
+
+== yesno
+A: 你 会 游泳 吗 ？ | Can you swim?
+B: 不 会 ， 你 呢 ？ | No, can you?
+
+== yesno
+A: 你 想 去 中国 吗 ？ | Do you want to go to China?
+B: 当然 想 ！ | Of course I do!
+
+== yesno
+A: 你 是 认真 的 吗 ？ | Are you serious?
+B: 当然 ！ | Of course!
+
+== yesno
+A: 你 吃 饭 了 吗 ？ | Have you eaten?
+B: 已经 吃 了 。 | I already ate.
+
+== yesno
+A: 你们 都 去 吗 ？ | Are you all going?
+B: 我们 都 去 ！ | We're all going!
+
+== yesno
+A: 你 饿 了 吗 ？ | Are you hungry?
+B: 饿 死 了 ！ | Starving! (lit. "hungry to death")
+
+== yesno
+A: 你 累 不 累 ？ | Are you tired?
+B: 不 累 ！ 走 吧 ！ | Not at all! Let's go!
+
+== yesno
+A: 你 生气 了 吗 ？ | Are you angry?
+B: 没有 啦 ！ | Nah, not at all!
+
+== yesno
+A: 你 困 了 吧 ？ | You're sleepy, huh?
+B: 嗯 ， 有点儿 。 | Yeah, a bit.
+
+== yesno
+A: 好吃 吗 ？ | Is it tasty?
+B: 好吃 ！ 太 好吃 了 ！ | Delicious! So good!
+
+== info
+A: 你 去 哪儿 ？ | Where are you going?
+B: 回 家 。 | Home.
+
+== info
+A: 现在 几 点 ？ | What time is it?
+B: 三 点 。 | Three o'clock.
+
+== info
+A: 这 个 多少 钱 ？ | How much is this?
+B: 十 块 。 | Ten kuai.
+
+== info
+A: 你 在 哪儿 呢 ？ | Where are you?
+B: 我 在 家 呢 。 | I'm at home.
+
+== info
+A: 你 在 干嘛 呢 ？ | What are you up to?
+B: 我 在 看 电视 呢 。 | Watching TV.
+
+== info
+A: 你 说 啥 ？ | What did you say?
+B: 没 什么 。 | Nothing.
+
+== info
+A: 这 是 啥 ？ | What's this?
+B: 礼物 ， 给 你 的 ！ | A present, for you!
+
+== info
+A: 妈妈 呢 ？ | Where's mom?
+B: 她 睡觉 呢 。 | She's sleeping.
+
+== info
+A: 我 的 手机 呢 ？ | Where's my phone?
+B: 在 桌子 上 。 | On the table.
+
+== info
+A: 你 在 哪儿 ？ | Where are you?
+B: 我 就 在 这儿 ！ | I'm right here!
+
+== info
+A: 你 家 在 哪儿 ？ | Where's your home?
+B: 我 家 在 德国 。 | My home is in Germany.
+
+== info
+A: 你 女儿 几 岁 了 ？ | How old is your daughter?
+B: 五 岁 了 。 | Five.
+
+== info
+A: 今天 星期 几 ？ | What day is it today?
+B: 星期 五 ！ 太 好 了 ！ | Friday! Great!
+
+== info
+A: 你 做 什么 工作 ？ | What do you do for work?
+B: 我 是 医生 。 | I'm a doctor.
+
+== info
+A: 你 几 点 上班 ？ | What time do you start work?
+B: 九 点 。 你 呢 ？ | Nine. You?
+
+== info
+A: 周末 你 干嘛 ？ | What are you doing this weekend?
+B: 在 家 休息 。 | Resting at home.
+
+== info
+A: 你 在 跟 谁 聊天 ？ | Who are you chatting with?
+B: 一 个 朋友 。 | A friend.
+
+== info
+A: 你 的 手机 号码 是 多少 ？ | What's your phone number?
+B: 我 发 给 你 。 | I'll send it to you.
+
+== info
+A: 你 想 喝 什么 ？ | What would you like to drink?
+B: 茶 吧 。 | Tea, I guess.
+
+== info
+A: 喝 茶 还是 咖啡 ？ | Tea or coffee?
+B: 都 行 。 | Either is fine.
+
+== info
+A: 你 喜欢 狗 还是 猫 ？ | Do you like dogs or cats?
+B: 都 喜欢 ！ | I like both!
+
+== info
+A: 这 个 用 汉语 怎么 说 ？ | How do you say this in Chinese?
+B: 我 也 不 知道 。 | I don't know either.
+
+== info
+A: 谁 呀 ？ | Who is it?
+B: 是 我 ！ | It's me!
+
+== info
+A: 你 喝 什么 ？ | What are you drinking?
+B: 茶 。 你 呢 ？ | Tea. You?
+A: 我 也 喝 茶 吧 。 | I'll have tea too, I guess.
+
+== info
+A: 你 在 学习 吗 ？ | Are you studying?
+B: 嗯 ， 学习 汉语 呢 。 | Yeah, studying Chinese.
+
+== food
+A: 你 想 吃 什么 ？ | What do you want to eat?
+B: 随便 。 | Whatever, anything's fine.
+
+== food
+A: 我 饿 了 。 | I'm hungry.
+B: 我 也 是 ！ 去 吃 饭 吧 ！ | Me too! Let's go eat!
+
+== food
+A: 有 水 吗 ？ 我 好 渴 。 | Is there any water? I'm so thirsty.
+B: 有 ， 给 你 。 | Yes, here you go.
+
+== food
+A: 今天 没有 米饭 了 。 | There's no rice left today.
+B: 好 吧 ， 那 吃 面条 。 | Oh well, noodles then.
+
+== food
+A: 你 怎么 不 吃 ？ | Why aren't you eating?
+B: 我 不 饿 嘛 。 | I'm just not hungry!
+
+== news
+A: 我 会 说 汉语 了 ！ | I can speak Chinese now!
+B: 哇 ， 太 厉害 了 ！ | Wow, that's awesome!
+
+== news
+A: 我 明天 去 中国 。 | I'm going to China tomorrow.
+B: 真的 假 的 ？ | For real?
+
+== news
+A: 下雨 了 ！ | It's raining!
+B: 哎呀 ， 我 没有 伞 ！ | Oh no, I don't have an umbrella!
+
+== news
+A: 这 个 手机 一 万 块 。 | This phone costs ten thousand kuai.
+B: 卧槽 ， 太 贵 了 吧 ！ | WTF, that's way too expensive!
+
+== news
+A: 我 昨天 工作 到 十 二 点 。 | I worked until midnight yesterday.
+B: 我去 ， 太 累 了 吧 ！ | Damn, that's exhausting!
+
+== news
+A: 我 的 猫 不 见 了 ！ | My cat is gone!
+B: 天哪 ！ 我 帮 你 找 ！ | Oh my god! I'll help you look!
+
+== news
+A: 我 的 狗 喜欢 看 电视 。 | My dog likes watching TV.
+B: 哈哈 ， 真的 吗 ？ | Haha, really?
+
+== news
+A: 你 知道 吗 ？ 他 会 说 德语 ！ | Did you know? He speaks German!
+B: 真的 吗 ？ 我 不 知道 ！ | Really? I had no idea!
+
+== news
+A: 他 是 我 哥哥 。 | He's my older brother.
+B: 哦 ， 这样 啊 ！ | Oh, I see!
+
+== news
+A: 明天 很 冷 。 | It'll be cold tomorrow.
+B: 是 吗 ？ | Really?
+
+== news
+A: 我 明天 还 要 上班 。 | I have to work tomorrow too.
+B: 不 是 吧 ！ | No way!
+
+== news
+A: 他 明天 不 来 了 。 | He's not coming tomorrow after all.
+B: 啊 ， 太 可惜 了 ！ | Aw, what a pity!
+
+== news
+A: 我 不 去 了 。 | I'm not going anymore.
+B: 啊 ？ 为什么 ？ | Huh? Why?
+
+== news
+A: 他 又 来 了 。 | He's here again.
+B: 唉 … | Sigh…
+
+== news
+A: 他 还 在 睡觉 。 | He's still sleeping.
+B: 都 十 点 了 ！ | It's already ten!
+
+== news
+A: 你 看 ， 我 一 百 分 ！ | Look, I got a hundred points!
+B: 我去 ， 牛 ！ | Whoa, awesome!
+
+== news
+A: 我们 明天 不 上班 ！ | We don't have to work tomorrow!
+B: 太 好 了 ！ | Great!
+
+== news
+A: 卧槽 ， 下雨 了 ！ | Damn, it's raining!
+B: 快 跑 ！ | Run!
+
+== news
+A: 这 个 很 便宜 ！ | This is really cheap!
+B: 真的 ？ 我 也 买 一 个 ！ | Really? I'll buy one too!
+
+== news
+A: 我 会 做 饭 。 | I can cook.
+B: 我 不 相信 ！ | I don't believe it!
+
+== news
+A: 我 会 说 汉语 、 德语 和 英语 。 | I speak Chinese, German and English.
+B: 牛 ！ | Awesome!
+
+== news
+A: 我 有 新 工作 了 ！ | I've got a new job!
+B: 哇 ！ 加油 ！ | Wow! Good luck!
+
+== complain
+A: 我 好 累 啊 。 | I'm so tired.
+B: 那 你 休息 一下 吧 。 | Then rest a bit.
+
+== complain
+A: 我 有点儿 冷 。 | I'm a bit cold.
+B: 多 喝 热 水 ！ | Drink lots of hot water! (classic Chinese advice)
+
+== complain
+A: 唉 ， 明天 又 要 考试 。 | Ugh, another exam tomorrow.
+B: 加油 ！ | You can do it!
+
+== complain
+A: 我 生病 了 。 | I'm sick.
+B: 啊 ？ 没事 吧 ？ | Oh no, are you OK?
+
+== complain
+A: 你 怎么 了 ？ | What's wrong?
+B: 没事 ， 我 有点儿 累 。 | Nothing, I'm just a bit tired.
+
+== complain
+A: 怎么 了 ？ | What's wrong?
+B: 我 头 疼 。 | My head hurts.
+
+== complain
+A: 我 今天 工作 了 十 个 小时 。 | I worked ten hours today.
+B: 辛苦 了 ！ | You must be worn out!
+
+== complain
+A: 我 有点儿 担心 。 | I'm a bit worried.
+B: 别 担心 ， 没事 的 。 | Don't worry, it'll be fine.
+
+== complain
+A: 我们 要 迟到 了 ！ | We're going to be late!
+B: 别 着急 ， 还 有 时间 。 | Don't panic, there's still time.
+
+== complain
+A: 你 不 舒服 吗 ？ | Are you not feeling well?
+B: 没事 ， 就是 有点儿 累 。 | I'm OK, just a bit tired.
+
+== complain
+A: 哎呀 ， 我 忘记 了 ！ | Oh no, I forgot!
+B: 没事 ， 明天 再 说 。 | No worries, we'll sort it out tomorrow.
+
+== comfort
+A: 你 明天 能 来 吗 ？ | Can you come tomorrow?
+B: 放心 吧 ， 我 一定 来 。 | Don't worry, I'll definitely come.
+
+== comfort
+A: 小心 ！ | Careful!
+B: 哎呀 ， 谢谢 ！ | Whoa, thanks!
+
+== praise
+A: 你 的 汉语 很 好 ！ | Your Chinese is great!
+B: 哪里 哪里 ！ | Oh, not at all!
+
+== praise
+A: 你 好 厉害 ！ | You're amazing!
+B: 哈哈 ， 谢谢 ！ | Haha, thanks!
+
+== praise
+A: 你 的 猫 太 可爱 了 ！ | Your cat is so cute!
+B: 是 吧 ！ | Right?!
+
+== praise
+A: 你 看 ， 我 的 新 衣服 ！ | Look, my new clothes!
+B: 哇 ， 好 漂亮 ！ | Wow, so pretty!
+
+== praise
+A: 哈哈 ， 你 真 笨 ！ | Haha, you're so silly!
+B: 讨厌 ！ | Oh, you're mean! (playful)
+
+== opinion
+A: 这 个 菜 怎么样 ？ | How's this dish?
+B: 不错 ！ | Not bad!
+
+== opinion
+A: 电影 好看 吗 ？ | Was the movie good?
+B: 一般 吧 。 | So-so, I guess.
+
+== opinion
+A: 这 个 电影 你 看 了 吗 ？ | Have you seen this movie?
+B: 看 了 ， 还 不错 。 | Yes, it was pretty good.
+
+== opinion
+A: 汉语 怎么样 ？ | How's Chinese going?
+B: 很 难 ， 但是 很 有意思 ！ | Hard, but really fun!
+
+== opinion
+A: 你 喜欢 这 个 游戏 吗 ？ | Do you like this game?
+B: 太 好玩儿 了 ！ | It's so much fun!
+
+== opinion
+A: 这 个 怎么样 ？ | How's this one?
+B: 有点儿 贵 。 | A bit pricey.
+
+== opinion
+A: 一 百 块 。 | A hundred kuai.
+B: 太 贵 了 吧 ！ | That's way too expensive!
+
+== opinion
+A: 考试 难 吗 ？ | Was the exam hard?
+B: 不 难 ， 很 容易 ！ | Not hard, really easy!
+
+== opinion
+A: 你 喜欢 喝 咖啡 吗 ？ | Do you like coffee?
+B: 其实 我 不 喜欢 。 | Actually, I don't.
+
+== opinion
+A: 你 今天 很 开心 啊 ！ | You're in a great mood today!
+B: 嗯 ， 我 有 新 工作 了 ！ | Yeah, I've got a new job!
+
+== plan
+A: 对了 ， 你 明天 来 吗 ？ | Oh right, are you coming tomorrow?
+B: 来 啊 ！ | Sure I am!
+
+== plan
+A: 那个 … 你 有 时间 吗 ？ | Um… do you have time?
+B: 有 啊 ， 怎么 了 ？ | Sure, what's up?
+
+== plan
+A: 明天 八 点 ， 行 吗 ？ | Tomorrow at eight, OK?
+B: 行 ！ | Works for me!
+
+== plan
+A: 你 现在 有 时间 吗 ？ | Do you have time now?
+B: 现在 不 行 ， 等 一下 吧 。 | Not right now, a bit later.
+
+== plan
+A: 下雨 了 ， 还 去 吗 ？ | It's raining. Still going?
+B: 算了 ， 不 去 了 。 | Forget it, we're not going.
+
+== plan
+A: 我 去 不 去 呢 ？ | Should I go or not?
+B: 去 吧 ， 反正 你 有 时间 。 | Go, you've got time anyway.
+
+== plan
+A: 你 干嘛 不 去 ？ | Why aren't you going?
+B: 我 不 想 去 嘛 。 | I just don't want to!
+
+== plan
+A: 我 不 喝 咖啡 。 | I don't drink coffee.
+B: 这样 啊 ， 那 喝 茶 吧 。 | I see, then have tea.
+
+== plan
+A: 我 去 买 东西 。 | I'm going shopping.
+B: 别 买 太 多 啊 ！ | Don't buy too much!
+
+== plan
+A: 喂 ， 你 在 哪儿 ？ | Hello, where are you?
+B: 我 马上 到 ！ | I'll be right there!
+
+== plan
+A: 快 来 ！ | Hurry up!
+B: 马上 ！ | Right away!
+
+== react
+A: 然后 呢 ？ | And then?
+B: 然后 他 就 走 了 。 | Then he just left.
+
+== react
+A: 你 为什么 不 来 ？ | Why didn't you come?
+B: 就是 … 我 有点儿 累 。 | It's just… I was a bit tired.
+
+== react
+A: 你 笑 什么 ？ | What are you laughing at?
+B: 没 什么 ， 哈哈 。 | Nothing, haha.
+
+# ---- added 14 Oct: change-of-state 了, 在…呢 (-ing), 啦, yes/no by repeating the verb, 不 vs 没 ----
+== yesno
+A: 你 渴 了 吗 ？ | Are you thirsty (by now)?
+B: 有点儿 ， 有 水 吗 ？ | A bit. Is there any water?
+
+== comfort
+A: 你 好 一点儿 了 吗 ？ | Are you feeling a bit better?
+B: 好 多 了 ， 谢谢 ！ | Much better, thanks!
+
+== praise
+A: 你 变 帅 了 ！ | You've gotten more handsome!
+B: 哈哈 ， 真的 吗 ？ | Haha, really?
+
+== react
+A: 我 明天 不 来 了 。 | I'm not coming tomorrow.
+B: 啊 ？ 真的 吗 ？ | What? Really?
+A: 开玩笑 的 啦 ！ | Just kidding!
+
+== info
+A: 你 在 干嘛 ？ | What are you doing?
+B: 我 在 吃 饭 呢 。 | I'm eating.
+
+== info
+A: 喂 ， 你 在 忙 吗 ？ | Hey, are you busy right now?
+B: 不 忙 ， 怎么 了 ？ | Not busy, what's up?
+
+== info
+A: 他 在 做 什么 ？ | What's he doing?
+B: 他 在 学习 呢 。 | He's studying.
+
+== yesno
+A: 你 在 听 我 说话 吗 ？ | Are you listening to me?
+B: 在 听 ， 在 听 ！ | I'm listening, I'm listening!
+
+== yesno
+A: 还 在 下雨 吗 ？ | Is it still raining?
+B: 对 ， 还 在 下雨 。 | Yes, still raining.
+
+== bye
+A: 我 走 啦 ！ | I'm heading out, bye!
+B: 好 ， 慢 走 ！ | OK, take care! (lit. "walk slowly", said to someone leaving)
+
+== react
+A: 他 为什么 不 来 ？ | Why isn't he coming?
+B: 不 知道 啦 。 | Dunno~
+
+== sorry
+A: 你 又 迟到 了 ！ | You're late again!
+B: 好 啦 好 啦 ， 对不起 ！ | OK, OK, sorry!
+
+== plan
+A: 我们 走 吧 ？ | Shall we go?
+B: 还 早 呢 ！ | It's still early!
+
+== yesno
+A: 你 去 过 中国 吗 ？ | Have you ever been to China?
+B: 没 去 过 ， 我 很 想 去 ！ | Never, but I'd love to go!
+
+== yesno
+A: 你 吃 饭 了 吗 ？ | Have you eaten?
+B: 还 没 呢 。 | Not yet.
+
+== yesno
+A: 你 明天 有 时间 吗 ？ | Do you have time tomorrow?
+B: 有 啊 ！ | Sure do!
+
+== yesno
+A: 你 有 猫 吗 ？ | Do you have a cat?
+B: 没有 ， 我 有 狗 。 | No, I have a dog.
+
+== yesno
+A: 你 认识 他 吗 ？ | Do you know him?
+B: 不 认识 。 | Don't know him.
+
+== yesno
+A: 你 知道 他 的 名字 吗 ？ | Do you know his name?
+B: 不 知道 。 | No idea.
+
+== request
+A: 你 要 茶 吗 ？ | Want some tea?
+B: 不用 了 ， 谢谢 。 | No thanks, I'm fine.
+
+== yesno
+A: 你 是 不 是 德国 人 ？ | Are you German?
+B: 是 啊 ， 怎么 了 ？ | Yeah, why?
+
+== yesno
+A: 你 饿 不 饿 ？ | Are you hungry?
+B: 不 饿 ， 我 吃 了 。 | No, I've eaten.
+
+== yesno
+A: 你 累 了 吧 ？ | You must be tired, huh?
+B: 还好 。 | I'm OK.
+
+== news
+A: 天 黑 了 。 | It's gotten dark.
+B: 我们 回 家 吧 。 | Let's go home.
+
+== news
+A: 我 懂 了 ！ | I get it now!
+B: 太 好 了 ！ | Great!
+
+== news
+A: 他 没 来 。 | He didn't come.
+B: 又 没 来 ？ | Didn't show up again?
+
+== complain
+A: 我 不 想 去 上班 。 | I don't want to go to work.
+B: 我 也 是 … | Same here…
+
+== react
+A: 你 生气 了 吗 ？ | Are you angry?
+B: 没有 ， 我 开玩笑 呢 。 | No, I'm joking.

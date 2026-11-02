@@ -1,0 +1,26 @@
+# Echo game: answering yes/no the Chinese way (repeat the verb; 不 vs 没).
+# question	natural answer	wrong answers (separated by ' / ')	what to say	explanation
+你 喜欢 吃 苹果 吗 ？	喜欢 ！	是 。 / 对 。	Say yes	There's no all-purpose "yes": repeat the verb. 喜欢！ = "I do!"
+你 喜欢 吃 苹果 吗 ？	不 喜欢 。	不 是 。 / 没有 。	Say no	"No" = 不 + the verb from the question.
+你 会 说 汉语 吗 ？	会 一点儿 。	是 一点儿 。 / 对 一点儿 。	Say: a little	Echo 会 (can): 会一点儿 = "a little".
+你 有 时间 吗 ？	有 啊 ！	是 啊 ！ / 对 啊 ！	Say yes, happily	Echo 有. 啊 makes it warm.
+你 有 时间 吗 ？	没有 。	不 有 。 / 不 是 。	Say no	有 is negated with 没, never 不: 没有.
+你 吃 了 吗 ？	还 没 。	不 吃 。 / 不 是 。	Say: not yet	Things that haven't happened take 没: 还没 = "not yet". 不吃 would mean "I won't eat".
+你 吃 了 吗 ？	吃 了 。	是 。 / 对 了 。	Say yes	Echo the verb with 了: 吃了. (对了 means "oh right, by the way".)
+你 去 吗 ？	去 ！	是 ！ / 有 ！	Say yes	Echo 去.
+你 去 吗 ？	不 去 了 。	没有 去 。 / 不 是 。	Say: not anymore	不去了 = "I'm not going (anymore)". 没有去 = "didn't go" (past).
+你 是 学生 吗 ？	是 。	有 。 / 会 。	Say yes	Here the verb is 是 itself, so 是 (or 是的) is the echo.
+你 是 学生 吗 ？	不 是 。	没 是 。 / 没有 。	Say no	是 → 不是, never 没是.
+你 懂 了 吗 ？	懂 了 ！	是 了 ！ / 对 了 ！	Say yes	Echo 懂 + 了: "got it!"
+你 认识 他 吗 ？	不 认识 。	不 知道 。 / 不 是 。	Say no	Knowing a person = 认识; knowing a fact = 知道.
+你 知道 吗 ？	不 知道 。	不 认识 。 / 不 是 。	Say no	知道 = to know a fact, so 不知道.
+他 是 你 哥哥 吧 ？	对 。	会 。 / 要 。	Confirm the guess	吧 questions are guesses: confirm with 对 or 是的 ("right").
+你 要 茶 吗 ？	不用 ， 谢谢 。	没有 ， 谢谢 。 / 不 是 ， 谢谢 。	Decline politely	Offers are declined with 不用 ("no need") or 不要.
+你 能 帮 我 吗 ？	可以 ！	是 ！ / 对 ！	Say yes	Requests: 可以 / 能 / 好 / 没问题.
+你 想 去 中国 吗 ？	想 ！	是 ！ / 对 ！	Say yes	Echo 想 (want to).
+你 累 了 吗 ？	有点儿 累 。	是 累 。 / 有 累 。	Say: a bit	No 是 before adjectives: 累 / 有点儿累 / 不累.
+你 饿 不 饿 ？	不 饿 。	不 是 。 / 是 饿 。	Say no	A-不-A questions (饿不饿) are answered with 饿 or 不饿.
+这 个 好吃 吗 ？	好吃 ！	有 ！ / 会 ！	Say yes	Echo the adjective: 好吃！
+你 去 过 中国 吗 ？	没 去 过 。	不 去 过 。 / 不 是 。	Say no	Experiences (过) are negated with 没: 没去过 = "never been".
+你 明天 来 吗 ？	来 ！	是 ！ / 有 ！	Say yes	Echo 来.
+你 是 不 是 德国 人 ？	是 啊 。	有 啊 。 / 会 啊 。	Say yes	是不是 = "yes or no?": answer 是 or 不是.

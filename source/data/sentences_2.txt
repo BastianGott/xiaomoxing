@@ -1,0 +1,251 @@
+# Batch 2: early vocabulary (HSK 1), so sentence cards unlock from the first days.
+再见 ！ | Goodbye!
+老师 ， 再见 ！ | Goodbye, teacher!
+你 叫 什么 ？ | What's your name? (casual)
+她 是 我 的 朋友 。 | She is my friend.
+你 是 老师 吗 ？ | Are you a teacher?
+他们 是 学生 吗 ？ | Are they students?
+我们 不 是 中国 人 。 | We are not Chinese.
+你们 好 ！ | Hello, everyone!
+他们 都 是 我 的 朋友 。 | They are all my friends.
+这 是 我 的 家 。 | This is my home.
+那 是 你 的 茶 吗 ？ | Is that your tea?
+这 是 谁 的 ？ | Whose is this?
+我 没有 茶 。 | I don't have any tea.
+你 有 水 吗 ？ | Do you have water?
+她 有 三 个 学生 。 | She has three students.
+我 喜欢 你 。 | I like you.
+他 不 喜欢 喝 水 。 | He doesn't like drinking water.
+你 想 吃 什么 ？ | What do you want to eat?
+我 想 吃 米饭 。 | I want to eat rice.
+你 去 不 去 ？ | Are you going or not?
+我 不 想 去 。 | I don't want to go.
+他 来 了 。 | He's here.
+他们 在 家 吗 ？ | Are they at home?
+老师 在 哪儿 ？ | Where is the teacher?
+我 的 朋友 在 中国 。 | My friend is in China.
+你 家 在 哪儿 ？ | Where is your home?
+我 爱 我 的 家 。 | I love my family.
+她 会 说 汉语 。 | She can speak Chinese.
+老师 说 汉语 。 | The teacher speaks Chinese.
+你 说 什么 ？ | What did you say?
+我 不 会 说 汉语 。 | I can't speak Chinese.
+这 个 人 是 谁 ？ | Who is this person?
+那 个 学生 叫 什么 名字 ？ | What's that student's name?
+你们 喜欢 中国 吗 ？ | Do you (all) like China?
+我 很 喜欢 中国 。 | I like China a lot.
+我们 都 很 好 。 | We're all fine.
+他 也 很 好 。 | He's fine too.
+我 也 想 去 。 | I want to go too.
+你 也 是 老师 吗 ？ | Are you a teacher too?
+这 个 大 ， 那 个 小 。 | This one is big, that one is small.
+我 家 很 小 。 | My home is small.
+你 看 ！ | Look!
+你 听 我 说 。 | Listen to me.
+我 和 他 是 朋友 。 | He and I are friends.
+谢谢 老师 ！ | Thank you, teacher!
+他 是 中国 人 吗 ？ | Is he Chinese?
+我 想 你 。 | I miss you.
+你 想 去 哪儿 ？ | Where do you want to go?
+我 想 去 你 家 。 | I want to go to your place.
+他们 来 中国 了 。 | They've come to China.
+她 喝 茶 ， 我 喝 水 。 | She drinks tea, I drink water.
+你 吃 了 吗 ？ | Have you eaten? (a common greeting)
+我 吃 了 米饭 。 | I ate rice.
+这 是 什么 茶 ？ | What tea is this?
+你 是 哪 国 人 ？ | Which country are you from?
+我 是 德国 人 。 | I'm German.
+他 不 是 德国 人 。 | He isn't German.
+你 会 说 德语 吗 ？ | Can you speak German?
+我 会 说 德语 和 英语 。 | I can speak German and English.
+她 在 学习 德语 。 | She is studying German.
+他 的 英语 很 好 。 | His English is very good.
+我 想 去 德国 。 | I want to go to Germany.
+德国 冷 吗 ？ | Is it cold in Germany?
+我 的 中国 朋友 想 去 德国 。 | My Chinese friend wants to go to Germany.
+我 在 德国 工作 。 | I work in Germany.
+我 家 在 德国 。 | My home is in Germany.
+你 喜欢 狗 吗 ？ | Do you like dogs?
+我 很 喜欢 猫 。 | I really like cats.
+这 个 苹果 很 大 。 | This apple is big.
+我 想 喝 茶 ， 不 想 喝 水 。 | I want tea, not water.
+你 想 喝 什么 茶 ？ | What kind of tea would you like?
+他们 在 哪儿 吃 饭 ？ | Where do they eat?
+我 在 饭店 吃 饭 。 | I eat at a restaurant.
+你 在 做 什么 呢 ？ | What are you doing?
+我 在 看 电视 呢 。 | I'm watching TV.
+老师 在 写 字 。 | The teacher is writing characters.
+你 的 名字 怎么 写 ？ | How do you write your name?
+我 不 认识 这 个 字 。 | I don't know this character.
+这 是 什么 字 ？ | What character is this?
+爸爸 和 妈妈 都 在 家 。 | Dad and mom are both at home.
+我 妈妈 很 漂亮 。 | My mom is pretty.
+她 的 女儿 叫 什么 名字 ？ | What's her daughter's name?
+我 的 儿子 很 喜欢 看 书 。 | My son really likes reading.
+他 是 我 的 中国 朋友 。 | He's my Chinese friend.
+你们 都 是 学生 吗 ？ | Are you all students?
+我们 的 老师 是 中国 人 。 | Our teacher is Chinese.
+学校 里 有 很 多 学生 。 | There are many students at the school.
+医院 里 有 很 多 人 。 | There are many people in the hospital.
+今天 学校 里 没有 人 。 | There's nobody at school today.
+他 今天 没有 工作 。 | He doesn't have work today.
+我 明天 不 工作 。 | I'm not working tomorrow.
+他 是 什么 时候 来 的 ？ | When did he come?
+我 是 昨天 来 的 。 | I came yesterday.
+我 住 在 北京 。 | I live in Beijing.
+我 不 想 住 在 这儿 。 | I don't want to live here.
+你 几 点 睡觉 ？ | What time do you go to bed?
+我 十 点 睡觉 。 | I go to bed at ten.
+我 想 坐 飞机 去 中国 。 | I want to fly to China.
+出租车 来 了 。 | The taxi is here.
+这 个 电影 怎么样 ？ | How is this movie?
+这 个 电影 很 好看 。 | This movie is really good.
+我 想 看 中国 电影 。 | I want to watch Chinese movies.
+那 个 电脑 是 我 的 。 | That computer is mine.
+你 的 电脑 在 桌子 上 。 | Your computer is on the table.
+猫 在 椅子 上 。 | The cat is on the chair.
+杯子 里 有 水 吗 ？ | Is there water in the cup?
+杯子 里 没有 茶 了 。 | There's no tea left in the cup.
+商店 在 哪儿 ？ | Where is the store?
+商店 在 医院 后面 。 | The store is behind the hospital.
+你 在 我 后面 。 | You're behind me.
+这 些 衣服 很 漂亮 。 | These clothes are pretty.
+一 杯 茶 多少 钱 ？ | How much is a cup of tea?
+我 有 三 块 钱 。 | I have three yuan.
+他 没有 钱 了 。 | He has no money left.
+你 能 来 我 家 吗 ？ | Can you come to my place?
+我 现在 不 能 说 。 | I can't talk now.
+你 会 做 中国 菜 吗 ？ | Can you cook Chinese food?
+我 会 做 一点儿 。 | I can cook a little.
+中午 我 想 吃 水果 。 | I want to eat fruit at noon.
+下午 你 做 什么 ？ | What are you doing this afternoon?
+上午 我 在 学校 。 | I'm at school in the morning.
+他 回 家 了 。 | He has gone home.
+我 想 回 家 。 | I want to go home.
+你 什么 时候 回 中国 ？ | When are you going back to China?
+我 下 个 月 去 北京 。 | I'm going to Beijing next month.
+上 个 星期 他 在 医院 。 | Last week he was in the hospital.
+他 认识 很 多 中国 人 。 | He knows a lot of Chinese people.
+她 今天 很 高兴 。 | She's very happy today.
+我 看见 你 的 朋友 了 。 | I saw your friend.
+你 听 ， 下雨 了 。 | Listen, it's raining.
+他 在 听 什么 ？ | What is he listening to?
+喂 ， 你 在 做 什么 ？ | Hello? What are you doing?
+没关系 ， 我 不 冷 。 | It's okay, I'm not cold.
+你 冷 吗 ？ | Are you cold?
+我 很 热 。 | I'm hot.
+天气 怎么样 ？ | How's the weather?
+北京 的 天气 很 好 。 | The weather in Beijing is nice.
+今天 天气 不 太 好 。 | The weather isn't great today.
+那儿 有 很 多 人 。 | There are lots of people over there.
+我 的 车 在 那儿 。 | My car is over there.
+他 有 车 吗 ？ | Does he have a car?
+你 有 几 本 书 ？ | How many books do you have?
+他 读 了 三 本 书 。 | He read three books.
+她 在 读 书 。 | She's reading.
+这 是 我 的 女儿 ， 她 八 岁 。 | This is my daughter; she's eight.
+他 爸爸 是 老师 。 | His dad is a teacher.
+她 想 做 医生 。 | She wants to be a doctor.
+你 想 做 什么 工作 ？ | What kind of job do you want?
+你 去 哪儿 了 ？ | Where did you go?
+我 去 商店 了 。 | I went to the store.
+他 怎么 没 来 ？ | Why didn't he come?
+谁 在 那儿 ？ | Who's there?
+谁 想 喝 茶 ？ | Who wants tea?
+哪儿 有 商店 ？ | Where is there a store?
+你 喜欢 哪 个 ？ | Which one do you like?
+你 想 买 哪 个 ？ | Which one do you want to buy?
+你们 学校 大 吗 ？ | Is your school big?
+我们 学校 很 大 。 | Our school is big.
+这 个 学校 有 多少 学生 ？ | How many students does this school have?
+你 今天 去 哪儿 ？ | Where are you going today?
+明天 你 来 吗 ？ | Are you coming tomorrow?
+昨天 他 没有 来 。 | He didn't come yesterday.
+我 现在 在 家 。 | I'm at home now.
+今天 几 号 ？ | What's the date today?
+明天 是 星期 五 。 | Tomorrow is Friday.
+你 女儿 几 岁 了 ？ | How old is your daughter?
+我 儿子 八 岁 。 | My son is eight.
+你 家 有 几 个 人 ？ | How many people are in your family?
+我 家 有 四 个 人 。 | There are four people in my family.
+我 爸爸 是 医生 。 | My dad is a doctor.
+她 妈妈 在 医院 工作 。 | Her mom works at a hospital.
+我 在 学校 学习 汉语 。 | I study Chinese at school.
+你 在 哪儿 工作 ？ | Where do you work?
+他 在 北京 工作 。 | He works in Beijing.
+我 不 想 工作 。 | I don't want to work.
+你 能 做 什么 ？ | What can you do?
+我 会 写 这 个 字 。 | I can write this character.
+你 会 写 你 的 名字 吗 ？ | Can you write your name?
+我 喜欢 读 书 。 | I like reading.
+这 本 书 很 好 。 | This book is good.
+我 想 看 这 本 书 。 | I want to read this book.
+他 买 了 一 本 书 。 | He bought a book.
+我 想 买 一些 水果 。 | I want to buy some fruit.
+我 想 买 苹果 。 | I want to buy apples.
+苹果 多少 钱 ？ | How much are the apples?
+三 块 钱 。 | Three yuan.
+这 个 杯子 多少 钱 ？ | How much is this cup?
+我 没有 钱 买 电脑 。 | I don't have money to buy a computer.
+商店 里 有 很 多 东西 。 | There are many things in the store.
+你 买 了 什么 东西 ？ | What did you buy?
+她 的 衣服 很 漂亮 。 | Her clothes are pretty.
+我 想 买 衣服 。 | I want to buy clothes.
+你 喜欢 吃 什么 菜 ？ | What dishes do you like?
+我 喜欢 吃 中国 菜 。 | I like Chinese food.
+这 个 饭店 的 菜 很 好 。 | The food at this restaurant is good.
+桌子 上 有 什么 ？ | What's on the table?
+我 的 电脑 很 小 。 | My computer is small.
+你 喜欢 看 电视 吗 ？ | Do you like watching TV?
+明天 我们 去 看 电影 。 | Tomorrow we're going to see a movie.
+我 想 打电话 。 | I want to make a phone call.
+他 在 打电话 。 | He's on the phone.
+我 坐 出租车 回 家 。 | I take a taxi home.
+你 怎么 去 北京 ？ | How are you getting to Beijing?
+我 坐 飞机 去 。 | I'm going by plane.
+你 几 点 回 家 ？ | What time are you going home?
+我 下午 三 点 回 家 。 | I'm going home at three in the afternoon.
+北京 很 大 。 | Beijing is big.
+北京 今天 很 冷 。 | It's cold in Beijing today.
+今天 太 热 了 。 | It's too hot today.
+明天 会 下雨 吗 ？ | Will it rain tomorrow?
+昨天 下雨 了 。 | It rained yesterday.
+我 有 很 多 书 。 | I have a lot of books.
+我 的 钱 太 少 了 。 | I have too little money.
+我 想 喝 一点儿 水 。 | I'd like a little water.
+医院 在 学校 前面 。 | The hospital is in front of the school.
+现在 几 点 了 ？ | What time is it now?
+现在 十 点 。 | It's ten o'clock.
+我 上午 工作 ， 下午 学习 。 | I work in the morning and study in the afternoon.
+中午 你 吃 什么 ？ | What are you having for lunch?
+你 什么 时候 来 ？ | When are you coming?
+我 想 睡觉 了 。 | I want to go to sleep now.
+你 看见 我 的 猫 了 吗 ？ | Have you seen my cat?
+我 没 看见 。 | I didn't see it.
+请 喝 水 。 | Please have some water.
+对不起 ， 我 不 认识 你 。 | Sorry, I don't know you.
+你们 是 同学 吗 ？ | Are you classmates?
+先生 ， 请 坐 。 | Please have a seat, sir.
+小姐 ， 请 喝 茶 。 | Please have some tea, miss.
+我 家 有 狗 。 | We have a dog at home.
+那 个 男 人 是 医生 。 | That man is a doctor.
+她们 都 是 老师 。 | They (the women) are all teachers.
+我 在 这儿 。 | I'm here.
+你 的 书 在 那儿 。 | Your book is over there.
+他 开 车 去 学校 。 | He drives to school.
+我们 吃 饭 了 。 | We've eaten.
+你 今天 吃 饭 了 吗 ？ | Have you eaten today?
+我 喝 了 一 杯 茶 。 | I drank a cup of tea.
+喂 ， 你 在 哪儿 ？ | Hello? Where are you?
+我 爱 喝 茶 。 | I love drinking tea.
+这 些 都 是 我 的 书 。 | These are all my books.
+那 些 人 是 谁 ？ | Who are those people?
+你 多 大 了 ？ | How old are you?
+昨天 我 看 了 电影 。 | I watched a movie yesterday.
+你 在 看 什么 ？ | What are you looking at?
+他 在 睡觉 。 | He's sleeping.
+妈妈 在 做 饭 。 | Mom is cooking.
+你 怎么 了 ？ | What's wrong?
+这 个 字 怎么 读 ？ | How do you read this character?
+你 的 汉语 很 好 ！ | Your Chinese is very good!
+哪 个 是 你 的 ？ | Which one is yours?

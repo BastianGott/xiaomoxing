@@ -1,0 +1,927 @@
+[
+ {
+  "id": "tokens",
+  "lv": 1,
+  "title": "Tokens",
+  "terms": [
+   [
+    "词元",
+    "cíyuán",
+    "token"
+   ],
+   [
+    "模型",
+    "móxíng",
+    "model"
+   ]
+  ],
+  "body": "An LLM never sees letters or words. A <b>tokenizer</b> cuts text into pieces from a fixed vocabulary (typically 32k–200k entries) and maps each to an integer ID. The model only ever reads and writes these IDs. In Chinese, one character is usually 1 token, sometimes 2–3 depending on the tokenizer.",
+  "formula": "\"我爱你\" → [1234, 9921, 777]",
+  "game": "Every word you learn is added to your model's vocabulary. Vocab size on the dashboard = words you have seen.",
+  "quiz": {
+   "q": "What does a language model actually take as input?",
+   "o": [
+    "Integer token IDs",
+    "Raw Unicode characters",
+    "Whole words from a dictionary",
+    "Pixel images of the text"
+   ],
+   "a": 0,
+   "x": "Text is tokenized into IDs; the model embeds and processes those IDs."
+  }
+ },
+ {
+  "id": "nexttoken",
+  "lv": 1,
+  "title": "Next-token prediction",
+  "terms": [
+   [
+    "预测",
+    "yùcè",
+    "to predict"
+   ]
+  ],
+  "body": "Pre-training has one objective: given all previous tokens, predict a probability distribution over the next one. Generation is just this step on repeat: predict, pick a token, append it, predict again. Everything else (chat, code, translation) emerges from doing this at scale.",
+  "formula": "p(x<sub>t</sub> | x<sub>1</sub>, …, x<sub>t−1</sub>)",
+  "game": "In the Decoder mini-game you are the model: pick the next token, one step at a time.",
+  "quiz": {
+   "q": "What is the pre-training objective of a GPT-style model?",
+   "o": [
+    "Predict the next token",
+    "Predict a masked middle token",
+    "Classify the sentence topic",
+    "Translate into English"
+   ],
+   "a": 0,
+   "x": "Causal LMs maximize log p(next token | previous tokens)."
+  }
+ },
+ {
+  "id": "bpe",
+  "lv": 2,
+  "title": "Tokenizers & BPE",
+  "terms": [
+   [
+    "分词器",
+    "fēncíqì",
+    "tokenizer"
+   ]
+  ],
+  "body": "<b>Byte-Pair Encoding</b> starts from single bytes and repeatedly merges the most frequent adjacent pair into a new token, until the vocabulary is full. Frequent words become one token, rare words split into pieces. Chinese is written without spaces, so splitting text into words (<i>中文分词</i>) is a classic NLP problem in its own right.",
+  "formula": "merge(most frequent pair) → repeat until |V| = N",
+  "game": "Unlocks the <b>Tokenizer</b> mini-game: segment Chinese sentences into words.",
+  "quiz": {
+   "q": "What does BPE merge at each training step?",
+   "o": [
+    "The most frequent adjacent pair",
+    "The least frequent adjacent pair",
+    "Two random adjacent symbols",
+    "The longest repeated substring"
+   ],
+   "a": 0,
+   "x": "Greedy merging of the most frequent adjacent pair builds the vocabulary."
+  }
+ },
+ {
+  "id": "mlm",
+  "lv": 2,
+  "title": "Masked language modeling (BERT)",
+  "terms": [
+   [
+    "掩码",
+    "yǎnmǎ",
+    "mask"
+   ]
+  ],
+  "body": "Encoder models like <b>BERT</b> are pre-trained differently from GPT: about 15% of the tokens are hidden behind a <b>[MASK]</b> and the model predicts them from the context on <i>both</i> sides. GPT-style decoders only ever see the left side. Masked models are strong at understanding (classification, search, embeddings); decoders at generating. Chengyu are the perfect masked-LM exercise: four fixed tokens, so three of them almost fully determine the fourth.",
+  "formula": "p(x<sub>mask</sub> | x<sub>left</sub>, x<sub>right</sub>)",
+  "game": "The <b>Idiom</b> mini-game is masked language modeling by hand: fill in the [MASK].",
+  "quiz": {
+   "q": "How is BERT pre-trained?",
+   "o": [
+    "Predict masked tokens from both sides",
+    "Predict only the next token",
+    "Translate sentence pairs",
+    "Rank answers by human preference"
+   ],
+   "a": 0,
+   "x": "Masked LM uses bidirectional context; causal LMs use only the left context."
+  }
+ },
+ {
+  "id": "embed",
+  "lv": 2,
+  "title": "Embeddings",
+  "terms": [
+   [
+    "向量",
+    "xiàngliàng",
+    "vector"
+   ]
+  ],
+  "body": "Each token ID indexes a row of a learned <b>embedding matrix</b>, giving a vector of e.g. 4096 numbers. Training pushes tokens used in similar contexts close together, so direction in this space carries meaning. 猫 and 狗 end up nearer to each other than to 银行.",
+  "formula": "e = E[id],  sim(a,b) = a·b / (‖a‖‖b‖)",
+  "game": "The Attention mini-game is you aligning words with their meanings: matching vectors.",
+  "quiz": {
+   "q": "What is an embedding?",
+   "o": [
+    "A learned vector per token",
+    "A fixed one-hot code per token",
+    "A compressed copy of the text",
+    "A list of a token's synonyms"
+   ],
+   "a": 0,
+   "x": "Embeddings map discrete token IDs to dense, learned vectors."
+  }
+ },
+ {
+  "id": "softmax",
+  "lv": 3,
+  "title": "Logits & softmax",
+  "terms": [
+   [
+    "概率",
+    "gàilǜ",
+    "probability"
+   ]
+  ],
+  "body": "The last layer outputs one raw score, a <b>logit</b>, for every token in the vocabulary. <b>Softmax</b> exponentiates and normalizes them into probabilities that sum to 1. Bigger logit gaps mean a more confident model.",
+  "formula": "p<sub>i</sub> = e<sup>z<sub>i</sub></sup> / Σ<sub>j</sub> e<sup>z<sub>j</sub></sup>",
+  "game": "The activity mix of each epoch is sampled from a softmax. See Settings → Temperature.",
+  "quiz": {
+   "q": "What does softmax guarantee about its outputs?",
+   "o": [
+    "Positive values that sum to 1",
+    "Integers between 0 and 9",
+    "Values sorted high to low",
+    "Values between −1 and 1"
+   ],
+   "a": 0,
+   "x": "Exponentiation makes them positive, normalization makes them sum to 1."
+  }
+ },
+ {
+  "id": "loss",
+  "lv": 3,
+  "title": "Cross-entropy & perplexity",
+  "terms": [
+   [
+    "损失",
+    "sǔnshī",
+    "loss"
+   ]
+  ],
+  "body": "Training minimizes <b>cross-entropy</b>: the negative log-probability the model gave to the correct next token. <b>Perplexity</b> is e<sup>loss</sup>, roughly how many options the model is torn between. Perplexity 1 = always certain and right.",
+  "formula": "L = −log p(correct),  PPL = e<sup>L</sup>",
+  "game": "Your epoch loss is a proxy: −mean log p, with Again≈0.15, Hard≈0.55, Good≈0.85, Easy≈0.95.",
+  "quiz": {
+   "q": "A perplexity of 1 means the model…",
+   "o": [
+    "is always certain and right",
+    "is guessing uniformly at random",
+    "has exactly one parameter",
+    "has a one-token vocabulary"
+   ],
+   "a": 0,
+   "x": "PPL = e^0 = 1 only when p(correct) = 1 every time."
+  }
+ },
+ {
+  "id": "sft",
+  "lv": 3,
+  "title": "Chat fine-tuning (SFT)",
+  "terms": [
+   [
+    "对话",
+    "duìhuà",
+    "dialogue; conversation"
+   ],
+   [
+    "回复",
+    "huífù",
+    "reply; response"
+   ]
+  ],
+  "body": "A pretrained model only continues text: ask it a question and it may happily continue with three more questions. <b>Supervised fine-tuning (SFT)</b> trains it further on (prompt, reply) pairs written in a chat template, so it learns to <i>answer</i>: <span class=\"mono\">&lt;|user|&gt;</span> 你吃了吗？ <span class=\"mono\">&lt;|assistant|&gt;</span> 吃了，你呢？ The loss is computed only on the reply tokens; the prompt is masked. The data is tiny compared with pretraining: LIMA (2023) showed that about a thousand carefully written examples already go a long way, because the knowledge is already there and SFT mostly teaches the <b>format and tone</b> of a good reply. That's what your dialogue cards do: the words come from pretraining (your vocabulary); now you learn which reply fits, with the right reactions (对对对, 好的好的) and mood particles (吧, 啊, 呢).",
+  "formula": "loss = −Σ<sub>t ∈ reply</sub> log p(x<sub>t</sub> | prompt, x<sub>&lt;t</sub>) · prompt tokens masked",
+  "game": "Dialogue cards and the Particles game: same words, a different reply or tone.",
+  "quiz": {
+   "q": "During SFT, which tokens usually contribute to the loss?",
+   "o": [
+    "Only the assistant's reply tokens",
+    "Only the user's prompt tokens",
+    "Every token, including the system prompt",
+    "None: SFT uses rewards instead of a loss"
+   ],
+   "a": 0,
+   "x": "Prompt tokens are masked: the model learns to produce replies, not to imitate users. Rewards come later, in RLHF/DPO."
+  }
+ },
+ {
+  "id": "quant",
+  "lv": 4,
+  "title": "Quantization basics",
+  "terms": [
+   [
+    "量化",
+    "liànghuà",
+    "quantization"
+   ]
+  ],
+  "body": "Weights are trained in 16/32-bit floats, but can be stored in fewer bits for inference. Map each float to a small integer with a <b>scale</b> s (and zero-point z), then dequantize on the fly. INT8 halves memory vs FP16, INT4 quarters it, usually with a small quality loss. Fewer bytes per weight also means faster, memory-bandwidth-bound decoding.",
+  "formula": "q = round(x/s) + z,  x̂ = s·(q − z)",
+  "game": "Unlocks <b>Quantize</b>: Mandarin tones squeeze a continuous pitch curve into 4 levels + neutral. Hear it, quantize it.",
+  "quiz": {
+   "q": "Going from FP16 to INT4 shrinks weight memory by about…",
+   "o": [
+    "4×",
+    "2×",
+    "8×",
+    "16×"
+   ],
+   "a": 0,
+   "x": "16 bits → 4 bits per weight is 4× (plus a little overhead for scales)."
+  }
+ },
+ {
+  "id": "attention",
+  "lv": 4,
+  "title": "Self-attention",
+  "terms": [
+   [
+    "注意力",
+    "zhùyìlì",
+    "attention"
+   ]
+  ],
+  "body": "Every token emits a <b>query</b>, a <b>key</b> and a <b>value</b> vector. A token's output is a weighted average of all values, weighted by how well its query matches each key. This is how 他 can look back at the person it refers to. In a decoder, a causal mask blocks attention to future tokens.",
+  "formula": "Attn(Q,K,V) = softmax(QKᵀ / √d) V",
+  "game": "The <b>Attention</b> mini-game: match queries (hanzi) to keys (meaning / pinyin).",
+  "quiz": {
+   "q": "Why divide QKᵀ by √d?",
+   "o": [
+    "Keep dot products from growing with d",
+    "Make attention faster on GPUs",
+    "Turn scores into probabilities",
+    "Add information about position"
+   ],
+   "a": 0,
+   "x": "Large dot products saturate softmax; scaling keeps gradients healthy."
+  }
+ },
+ {
+  "id": "multihead",
+  "lv": 5,
+  "title": "Multi-head attention",
+  "terms": [
+   [
+    "多头",
+    "duōtóu",
+    "multi-head"
+   ]
+  ],
+  "body": "Instead of one attention, run h <b>heads</b> in parallel, each with its own Q/K/V projections in a smaller subspace. Heads specialize: one may track syntax, another coreference, another position. Outputs are concatenated and projected back. Grouped-query attention (GQA) shares keys/values across heads to save memory.",
+  "formula": "MHA = Concat(head<sub>1</sub>…head<sub>h</sub>) W<sub>O</sub>",
+  "game": "Attention rounds alternate heads: meaning-head and pinyin-head.",
+  "quiz": {
+   "q": "What does grouped-query attention (GQA) share across query heads?",
+   "o": [
+    "Key and value projections",
+    "Query and output projections",
+    "The token embeddings",
+    "The softmax temperature"
+   ],
+   "a": 0,
+   "x": "Several query heads share one K/V head, shrinking the KV cache."
+  }
+ },
+ {
+  "id": "rope",
+  "lv": 5,
+  "title": "Positional encoding (RoPE)",
+  "terms": [
+   [
+    "位置",
+    "wèizhì",
+    "position"
+   ]
+  ],
+  "body": "Attention by itself is order-blind: shuffling tokens shuffles outputs. Models inject position. <b>RoPE</b> rotates each query and key by an angle proportional to its position, so their dot product depends on relative distance. Chinese grammar leans heavily on word order: 我爱你 ≠ 你爱我.",
+  "formula": "q′ = R(θ·pos) q,  k′ = R(θ·pos) k",
+  "game": "The Decoder mini-game is all about order.",
+  "quiz": {
+   "q": "Why do transformers need positional information?",
+   "o": [
+    "Attention by itself ignores order",
+    "Attention by itself is too slow",
+    "Softmax is undefined without it",
+    "Training cannot start without it"
+   ],
+   "a": 0,
+   "x": "Without it, attention is permutation-invariant."
+  }
+ },
+ {
+  "id": "induction",
+  "lv": 5,
+  "title": "Induction heads: copying from context",
+  "terms": [
+   [
+    "复制",
+    "fùzhì",
+    "to copy"
+   ]
+  ],
+  "body": "Some attention heads learn a simple, powerful trick: find an earlier place where the current token appeared and <b>copy the token that came after it</b>. Two heads work together: one marks \"which token came before me\", the other searches for that and attends to its successor. Anthropic researchers named these <b>induction heads</b> (2022) and found that they appear quite suddenly during training, right when the model gets much better at learning from its prompt (in-context learning). Copying from the context is one of the most useful things a language model does: names, numbers, code variables. Chinese yes/no answers work by copying too: 你喜欢吗？ → 喜欢！ The answer reuses the verb from the question.",
+  "formula": "[A][B] … [A] → predict [B]",
+  "game": "Echo: answer yes/no the Chinese way, by copying the verb from the question.",
+  "quiz": {
+   "q": "What does an induction head do?",
+   "o": [
+    "Finds an earlier copy of the current token and predicts what followed it",
+    "Splits rare words into subword tokens",
+    "Stores the keys and values of past tokens",
+    "Normalizes activations between layers"
+   ],
+   "a": 0,
+   "x": "[A][B] … [A] → [B]: a copy mechanism behind in-context learning."
+  }
+ },
+ {
+  "id": "greedy",
+  "lv": 6,
+  "title": "Decoding: greedy",
+  "terms": [
+   [
+    "解码",
+    "jiěmǎ",
+    "decoding"
+   ]
+  ],
+  "body": "<b>Decoding</b> is how we turn next-token distributions into text. <b>Greedy</b> takes the argmax at every step: fast and deterministic, but it can miss sequences that are better overall, and tends to loop and repeat itself in open-ended text.",
+  "formula": "x<sub>t</sub> = argmax p(· | x<sub>&lt;t</sub>)",
+  "game": "Unlocks <b>Decoder</b>: build Chinese sentences token by token. Wrong tokens cost log-prob.",
+  "quiz": {
+   "q": "Greedy decoding picks…",
+   "o": [
+    "The most likely token at each step",
+    "A random token from the top-k",
+    "The best of k full sequences",
+    "A token sampled at temperature 1"
+   ],
+   "a": 0,
+   "x": "Argmax at every step, no look-ahead."
+  }
+ },
+ {
+  "id": "temperature",
+  "lv": 6,
+  "title": "Temperature",
+  "terms": [
+   [
+    "温度",
+    "wēndù",
+    "temperature"
+   ]
+  ],
+  "body": "Divide logits by a <b>temperature</b> T before softmax. T &lt; 1 sharpens the distribution (more predictable), T &gt; 1 flattens it (more diverse, more mistakes), T → 0 approaches greedy. It's the single most-tuned decoding knob.",
+  "formula": "p<sub>i</sub> = softmax(z<sub>i</sub> / T)",
+  "game": "Settings → Temperature controls how varied your epochs are. Watch the bars change.",
+  "quiz": {
+   "q": "Raising temperature above 1…",
+   "o": [
+    "Flattens the distribution",
+    "Sharpens the distribution",
+    "Removes the long tail",
+    "Shrinks the vocabulary"
+   ],
+   "a": 0,
+   "x": "Dividing by T>1 shrinks logit gaps, so probabilities move toward uniform."
+  }
+ },
+ {
+  "id": "topkp",
+  "lv": 7,
+  "title": "Top-k & top-p sampling",
+  "terms": [
+   [
+    "采样",
+    "cǎiyàng",
+    "sampling"
+   ]
+  ],
+  "body": "Sampling from the full distribution occasionally picks junk from the long tail. <b>Top-k</b> keeps only the k most likely tokens. <b>Top-p</b> (nucleus) keeps the smallest set whose probabilities sum to ≥ p, renormalizes and samples. Top-p adapts: few candidates when the model is sure, many when it's not.",
+  "formula": "V<sub>p</sub> = min set with Σ p<sub>i</sub> ≥ p",
+  "game": "When the Decoder offers distractors, it shows only a top-k slice.",
+  "quiz": {
+   "q": "Top-p = 0.9 keeps…",
+   "o": [
+    "Fewest tokens covering 90% of mass",
+    "The 90 most likely tokens",
+    "Only tokens with p ≥ 0.9",
+    "90% of the whole vocabulary"
+   ],
+   "a": 0,
+   "x": "Nucleus sampling cuts the tail by cumulative mass."
+  }
+ },
+ {
+  "id": "beam",
+  "lv": 7,
+  "title": "Beam search",
+  "terms": [
+   [
+    "束搜索",
+    "shù sōusuǒ",
+    "beam search"
+   ]
+  ],
+  "body": "<b>Beam search</b> keeps the k best partial sequences (beams), ranked by cumulative log-probability. Each step it expands every beam with candidate tokens and keeps the top k of the results. It finds higher-likelihood outputs than greedy, which is why translation and summarization love it. A <b>length penalty</b> divides the score by length<sup>α</sup> so short outputs don't win unfairly.",
+  "formula": "score = Σ log p(x<sub>t</sub>) / |x|<sup>α</sup>",
+  "game": "The Decoder mini-game is greedy decoding by hand. Beam search would keep your two best partial sentences alive at every step.",
+  "quiz": {
+   "q": "Beam search with beam width 1 is the same as…",
+   "o": [
+    "Greedy decoding",
+    "Top-p sampling",
+    "Random sampling",
+    "Exhaustive search"
+   ],
+   "a": 0,
+   "x": "Keeping one beam = argmax each step."
+  }
+ },
+ {
+  "id": "ffn",
+  "lv": 8,
+  "title": "Feed-forward layers",
+  "terms": [
+   [
+    "前馈",
+    "qiánkuì",
+    "feed-forward"
+   ],
+   [
+    "参数",
+    "cānshù",
+    "parameter"
+   ]
+  ],
+  "body": "After attention, each token passes alone through a small MLP: expand to ~4× width, apply a nonlinearity (today usually SwiGLU), project back. These layers hold about two-thirds of a model's <b>parameters</b> and are thought to store much of its factual knowledge.",
+  "formula": "FFN(x) = W<sub>2</sub> · σ(W<sub>1</sub> x)",
+  "game": "Your parameter count grows with mature words.",
+  "quiz": {
+   "q": "Where do most parameters of a dense transformer live?",
+   "o": [
+    "Feed-forward (MLP) layers",
+    "Attention Q/K/V projections",
+    "Layer normalization",
+    "Positional encodings"
+   ],
+   "a": 0,
+   "x": "The 4× wide MLPs dominate the parameter count."
+  }
+ },
+ {
+  "id": "residual",
+  "lv": 8,
+  "title": "Residuals & normalization",
+  "terms": [
+   [
+    "残差",
+    "cánchā",
+    "residual"
+   ]
+  ],
+  "body": "Each block adds its output to its input: x + f(x). These <b>residual connections</b> give gradients a highway through 100+ layers. <b>RMSNorm/LayerNorm</b> keeps activations at a stable scale; modern models normalize before each sub-layer (pre-norm).",
+  "formula": "x ← x + Attn(Norm(x));  x ← x + FFN(Norm(x))",
+  "game": "Old words keep flowing through your reviews like a residual stream.",
+  "quiz": {
+   "q": "What do residual connections mainly help with?",
+   "o": [
+    "Training very deep networks",
+    "Shrinking the vocabulary",
+    "Reducing quantization error",
+    "Speeding up tokenization"
+   ],
+   "a": 0,
+   "x": "They keep gradients flowing through many layers."
+  }
+ },
+ {
+  "id": "training",
+  "lv": 9,
+  "title": "Training: gradients & AdamW",
+  "terms": [
+   [
+    "训练",
+    "xùnliàn",
+    "to train"
+   ]
+  ],
+  "body": "Backpropagation computes how the loss changes with every weight. <b>AdamW</b> updates weights using running averages of gradients (momentum) and their squares (per-weight step sizes), plus decoupled weight decay. A short learning-rate warm-up and a cosine decay are the standard schedule.",
+  "formula": "θ ← θ − η · m̂ / (√v̂ + ε) − η λ θ",
+  "game": "Every review is one training step for your brain.",
+  "quiz": {
+   "q": "What does Adam keep for every weight?",
+   "o": [
+    "Moving averages of gradient and its square",
+    "A copy of the weight's initial value",
+    "How many times it was updated",
+    "Its value from the previous epoch"
+   ],
+   "a": 0,
+   "x": "First and second moment estimates give momentum and adaptive step sizes."
+  }
+ },
+ {
+  "id": "fsrs",
+  "lv": 9,
+  "title": "Spaced repetition (FSRS)",
+  "terms": [
+   [
+    "记忆",
+    "jìyì",
+    "memory"
+   ]
+  ],
+  "body": "This game schedules words with <b>FSRS</b>, the algorithm Anki also offers. Each word has a <b>stability</b> S (days until recall chance falls to 90%) and a <b>difficulty</b> D. Recall decays as a power law; the next review is set when predicted recall hits your target retention. FSRS's own parameters were fitted with gradient descent on millions of real reviews: ML scheduling ML-style learning.",
+  "formula": "R(t) = (1 + 19/81 · t/S)<sup>−0.5</sup>",
+  "game": "Settings → Desired retention trades workload against forgetting.",
+  "quiz": {
+   "q": "In FSRS, stability S is…",
+   "o": [
+    "Days until recall chance falls to 90%",
+    "How many times you've reviewed it",
+    "How hard the word is, from 1 to 10",
+    "Days since you first learned it"
+   ],
+   "a": 0,
+   "x": "By definition R(S) = 0.9."
+  }
+ },
+ {
+  "id": "kvcache",
+  "lv": 10,
+  "title": "KV cache",
+  "terms": [
+   [
+    "缓存",
+    "huǎncún",
+    "cache"
+   ]
+  ],
+  "body": "When generating, the keys and values of earlier tokens never change, so they're stored in a <b>KV cache</b>. Each new token computes only its own Q, K, V and attends to the cache, making generation linear per step instead of re-running the whole prefix. The cache grows with context length × layers × KV heads and often dominates GPU memory for long contexts.",
+  "formula": "mem ≈ 2 · layers · kv_heads · d<sub>head</sub> · seq_len · bytes",
+  "game": "You don't reread a sentence from the start for every new word, either.",
+  "quiz": {
+   "q": "What does the KV cache store?",
+   "o": [
+    "Keys and values of past tokens",
+    "Queries of past tokens",
+    "Gradients of the last step",
+    "Logits of past tokens"
+   ],
+   "a": 0,
+   "x": "Past K/V are reused at every step."
+  }
+ },
+ {
+  "id": "int4",
+  "lv": 11,
+  "title": "INT4 & group-wise quantization",
+  "terms": [
+   [
+    "精度",
+    "jīngdù",
+    "precision"
+   ]
+  ],
+  "body": "One scale for a whole matrix lets a few large outliers ruin precision for everything else. <b>Group-wise</b> quantization uses one scale (and zero-point) per small group, e.g. 128 weights, so outliers only hurt locally. Most 4-bit formats in practice (GPTQ/AWQ checkpoints, GGUF Q4_K) work this way.",
+  "formula": "bits/weight ≈ 4 + 16/group_size",
+  "game": "In Quantize, a higher streak drops your bit-width: harder, more XP.",
+  "quiz": {
+   "q": "Why use a separate scale per group of weights?",
+   "o": [
+    "Outliers only distort their own group",
+    "It removes rounding error completely",
+    "It lets each weight use 1 bit",
+    "It avoids storing any scales at all"
+   ],
+   "a": 0,
+   "x": "Local scales adapt to local ranges."
+  }
+ },
+ {
+  "id": "gptq",
+  "lv": 12,
+  "title": "GPTQ",
+  "terms": [
+   [
+    "误差",
+    "wùchā",
+    "error"
+   ]
+  ],
+  "body": "<b>GPTQ</b> quantizes a trained model layer by layer, with no retraining. Inside a layer it rounds weights one column at a time and, after each column, adjusts the not-yet-quantized columns to cancel the rounding error. The adjustment uses the inverse <b>Hessian</b> H = 2XXᵀ estimated from a small calibration set (~128 samples). That second-order trick (from Optimal Brain Surgeon) brings 100B+ models to 3–4 bits in a few GPU hours.",
+  "formula": "min ‖WX − ŴX‖²,  H = 2XXᵀ",
+  "game": "Like reviewing a word you missed: the error gets fed back so the rest compensates.",
+  "quiz": {
+   "q": "How does GPTQ compensate rounding error?",
+   "o": [
+    "Adjusts later columns via the inverse Hessian",
+    "Fine-tunes the full model after rounding",
+    "Keeps the largest weights in FP16",
+    "Rounds each weight up or down at random"
+   ],
+   "a": 0,
+   "x": "Second-order error feedback into unquantized columns."
+  }
+ },
+ {
+  "id": "awq",
+  "lv": 13,
+  "title": "AWQ",
+  "terms": [
+   [
+    "权重",
+    "quánzhòng",
+    "weight"
+   ]
+  ],
+  "body": "<b>Activation-aware Weight Quantization</b> notices that ~1% of weight channels matter far more, the ones that see large activations. Before quantizing, AWQ scales those channels up (and the matching activations down, an exact equivalent transform) so they keep more precision. There's no backprop or reconstruction, so it's fast and generalizes well.",
+  "formula": "y = (W·s)(x/s),  s chosen from activation statistics",
+  "game": "Your leech words get extra attention, same idea.",
+  "quiz": {
+   "q": "Which weights does AWQ protect?",
+   "o": [
+    "Channels that see large activations",
+    "Weights with the largest magnitude",
+    "The embedding and output layers",
+    "Weights with the largest gradients"
+   ],
+   "a": 0,
+   "x": "Salience comes from activation magnitude, not weight magnitude."
+  }
+ },
+ {
+  "id": "hparams",
+  "lv": 14,
+  "title": "Decoding hyperparameters",
+  "terms": [
+   [
+    "超参数",
+    "chāocānshù",
+    "hyperparameter"
+   ]
+  ],
+  "body": "Temperature, top-p, top-k, beam width and penalties are <b>inference hyperparameters</b>: no retraining, but large effects on quality. The best setting depends on the task (code vs. stories) and on the model itself. Quantization nudges the logits, so a setting tuned for the full-precision model isn't automatically best for its quantized version.",
+  "formula": "θ* = argmax<sub>θ</sub> quality(model, decode(θ))",
+  "game": "Your own hyperparameters: new words/day, retention, temperature.",
+  "quiz": {
+   "q": "Which of these is an inference (decoding) hyperparameter?",
+   "o": [
+    "Top-p",
+    "Learning rate",
+    "Batch size",
+    "Weight decay"
+   ],
+   "a": 0,
+   "x": "Top-p only matters at generation time."
+  }
+ },
+ {
+  "id": "lora",
+  "lv": 15,
+  "title": "LoRA & QLoRA",
+  "terms": [
+   [
+    "微调",
+    "wēitiáo",
+    "fine-tuning"
+   ]
+  ],
+  "body": "Full fine-tuning updates every weight. <b>LoRA</b> freezes W and learns a low-rank update ΔW = BA with rank r ≪ d, often &lt;1% of the parameters. <b>QLoRA</b> keeps the frozen base in 4-bit (NF4) and trains LoRA adapters on top, so a large model can be fine-tuned on a single GPU.",
+  "formula": "W′ = W + BA,  B ∈ ℝ<sup>d×r</sup>, A ∈ ℝ<sup>r×k</sup>",
+  "game": "Fine-tune mode drills your weak words without touching the schedule.",
+  "quiz": {
+   "q": "LoRA trains…",
+   "o": [
+    "A low-rank update, base weights frozen",
+    "All weights, at a lower learning rate",
+    "Only the embedding table",
+    "Only the final output layer"
+   ],
+   "a": 0,
+   "x": "ΔW = BA with small rank r."
+  }
+ },
+ {
+  "id": "specdec",
+  "lv": 16,
+  "title": "Speculative decoding",
+  "terms": [
+   [
+    "推测",
+    "tuīcè",
+    "to speculate"
+   ]
+  ],
+  "body": "A small, fast <b>draft model</b> proposes several tokens ahead; the big model checks all of them in a single forward pass. A clever accept/reject rule guarantees the final output has exactly the big model's distribution, often with 2–3× speed-ups.",
+  "formula": "accept x with prob min(1, p<sub>big</sub>(x) / p<sub>draft</sub>(x))",
+  "game": "Guess a word fast, then verify: what you do on every card.",
+  "quiz": {
+   "q": "Does speculative decoding change the big model's output distribution?",
+   "o": [
+    "No, the accept rule keeps it exact",
+    "Yes, quality drops slightly",
+    "Only when temperature is 0",
+    "Only for 4-bit models"
+   ],
+   "a": 0,
+   "x": "Rejection sampling preserves the target distribution."
+  }
+ },
+ {
+  "id": "moe",
+  "lv": 17,
+  "title": "Mixture of Experts",
+  "terms": [
+   [
+    "专家",
+    "zhuānjiā",
+    "expert"
+   ]
+  ],
+  "body": "In an <b>MoE</b> layer the single FFN is replaced by many expert FFNs and a router that sends each token to the top-k (often 2) of them. Total parameters can be huge while compute per token stays small, since only a few experts run.",
+  "formula": "y = Σ<sub>i∈topk</sub> g<sub>i</sub>(x) · E<sub>i</sub>(x)",
+  "game": "Each mini-game is an expert; the epoch planner is the router.",
+  "quiz": {
+   "q": "Why can an MoE model have huge parameter counts but modest compute per token?",
+   "o": [
+    "Only a few experts run per token",
+    "Experts share all of their weights",
+    "Attention is skipped for most tokens",
+    "Experts run in 1-bit precision"
+   ],
+   "a": 0,
+   "x": "Sparse activation: top-k routing."
+  }
+ },
+ {
+  "id": "scaling",
+  "lv": 18,
+  "title": "Scaling laws",
+  "terms": [
+   [
+    "规模",
+    "guīmó",
+    "scale"
+   ]
+  ],
+  "body": "Loss falls as a smooth <b>power law</b> in parameters, data and compute. Chinchilla showed many big models were under-trained: compute-optimal training uses roughly 20 tokens per parameter. Today models are often trained far beyond that, because inference is cheaper for smaller models.",
+  "formula": "L(N, D) ≈ E + A/N<sup>α</sup> + B/D<sup>β</sup>",
+  "game": "More reviews, lower loss. Slowly, but predictably.",
+  "quiz": {
+   "q": "Chinchilla's compute-optimal rule of thumb is about…",
+   "o": [
+    "20 tokens per parameter",
+    "1 token per parameter",
+    "200 tokens per parameter",
+    "2000 tokens per parameter"
+   ],
+   "a": 0,
+   "x": "Roughly D ≈ 20·N."
+  }
+ },
+ {
+  "id": "context",
+  "lv": 19,
+  "title": "Context length & FlashAttention",
+  "terms": [
+   [
+    "上下文",
+    "shàngxiàwén",
+    "context"
+   ]
+  ],
+  "body": "Attention compares every token with every other: cost grows with n². <b>FlashAttention</b> computes exactly the same result but in tiles that fit in fast on-chip SRAM, never writing the n×n matrix to GPU memory. With RoPE scaling tricks, context windows grew from 2k to 100k+ tokens.",
+  "formula": "time O(n² d), memory O(n) with tiling",
+  "game": "Longer sentences unlock as your vocabulary grows.",
+  "quiz": {
+   "q": "What does FlashAttention change?",
+   "o": [
+    "Memory access; the result stays exact",
+    "The math, to a fast approximation",
+    "The number of attention heads",
+    "The tokenizer's vocabulary"
+   ],
+   "a": 0,
+   "x": "It's IO-aware but exact."
+  }
+ },
+ {
+  "id": "rlhf",
+  "lv": 20,
+  "title": "RLHF & DPO",
+  "terms": [
+   [
+    "反馈",
+    "fǎnkuì",
+    "feedback"
+   ]
+  ],
+  "body": "After pre-training and supervised fine-tuning, models are aligned with human preferences. <b>RLHF</b> trains a reward model on ranked answers, then optimizes the LLM with RL (e.g. PPO) under a KL penalty to stay near the original. <b>DPO</b> skips the reward model and optimizes directly on preference pairs.",
+  "formula": "max E[r(x,y)] − β · KL(π ‖ π<sub>ref</sub>)",
+  "game": "Your Again/Hard/Good/Easy ratings are the human feedback for your scheduler.",
+  "quiz": {
+   "q": "What does DPO remove compared to classic RLHF?",
+   "o": [
+    "The reward model and the RL loop",
+    "The supervised fine-tuning stage",
+    "The human preference data",
+    "The reference model entirely"
+   ],
+   "a": 0,
+   "x": "DPO turns preference learning into a simple classification-style loss."
+  }
+ },
+ {
+  "id": "penalty",
+  "lv": 22,
+  "title": "Repetition & length penalties",
+  "terms": [
+   [
+    "惩罚",
+    "chéngfá",
+    "penalty"
+   ]
+  ],
+  "body": "A <b>repetition penalty</b> lowers logits of tokens already generated (frequency/presence penalties do this by count). A <b>length penalty</b> in beam search controls the bias toward short outputs. Both are blunt tools: too strong and the text gets odd.",
+  "formula": "z<sub>i</sub> ← z<sub>i</sub> / ρ  if token i already appeared",
+  "game": "The planner penalizes repeating the same mini-game twice in a row.",
+  "quiz": {
+   "q": "A repetition penalty works by…",
+   "o": [
+    "Lowering logits of tokens already used",
+    "Raising temperature after each token",
+    "Deleting tokens from the vocabulary",
+    "Shortening the prompt automatically"
+   ],
+   "a": 0,
+   "x": "It adjusts logits of seen tokens."
+  }
+ },
+ {
+  "id": "distill",
+  "lv": 24,
+  "title": "Knowledge distillation",
+  "terms": [
+   [
+    "蒸馏",
+    "zhēngliú",
+    "distillation"
+   ]
+  ],
+  "body": "A small <b>student</b> model learns to match a big <b>teacher</b>'s full output distribution rather than only the correct token. The soft probabilities carry extra signal (which wrong answers are almost right), so students learn more per example.",
+  "formula": "L = KL(p<sub>teacher</sub> ‖ p<sub>student</sub>)",
+  "game": "Distractors in multiple choice are chosen to be almost right on purpose.",
+  "quiz": {
+   "q": "Distillation trains the student on…",
+   "o": [
+    "The teacher's soft probabilities",
+    "Only the teacher's argmax labels",
+    "The teacher's weights directly",
+    "Random labels for regularization"
+   ],
+   "a": 0,
+   "x": "Soft targets carry dark knowledge."
+  }
+ },
+ {
+  "id": "prune",
+  "lv": 26,
+  "title": "Pruning & sparsity",
+  "terms": [
+   [
+    "剪枝",
+    "jiǎnzhī",
+    "pruning"
+   ]
+  ],
+  "body": "<b>Pruning</b> removes weights that matter least. Structured 2:4 sparsity (2 zeros in every 4 weights) gets hardware speed-ups on modern GPUs. <b>SparseGPT</b> prunes in one shot using the same second-order error compensation idea as GPTQ, reaching ~50% sparsity on large models with little loss.",
+  "formula": "2:4 sparsity → 50% zeros",
+  "game": "Suspend words you already know: prune them from your queue.",
+  "quiz": {
+   "q": "SparseGPT is closely related to which quantization method?",
+   "o": [
+    "GPTQ",
+    "AWQ",
+    "LoRA",
+    "BPE"
+   ],
+   "a": 0,
+   "x": "Same authors, same Hessian-based error compensation."
+  }
+ }
+]
